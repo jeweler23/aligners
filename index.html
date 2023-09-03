@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Элайнеры для детей</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">  
+            <img src="image/Group 103.svg" alt="Доктор Левин" class="logo__image">
+            <div class="logo__info">
+                <span class="logo__text__blue">Доктор Левин</span>
+                <span class="logo__text__pink">Детское отделение</span>
+            </div>   
+        </div>
+        <div class="logo logo-adress">
+            <img src="image/Group 193.svg" alt="Станция метро" class="logo__image">
+            <div class="logo__info">
+                <span class="logo__text__orange">Университет</span>
+                <span class="logo__text__grey">Проспект Вернандского, 8а</span>
+            </div>    
+        </div>
+        <div class="quastion">
+            <a href="tel:+74957755821">+7 (495) 775-58-21</a>
+            <p>Задайте интересующий вопрос</p>
+        </div>
+        <!-- хочу сделать кнопку по контуру изображения -->
+        <button class="btn-style"><a href="#" class="btn-style__link">Записаться на приём</a></button>
+        <button class="nav-button">
+            <img src="image/menu.png" alt="nav button">
+        </button>   
+    </header>
+    <nav class="navigation">
+        <ul class="navigation-list">
+            <li class="navigation-list__item"><a href="#sleep-therapy" class="navigation-list__link">лечение зубов во сне</a></li>
+            <li class="navigation-list__item"><a href="#" class="navigation-list__link">чистка зубов</a></li>
+            <li class="navigation-list__item"><a href="#" class="navigation-list__link">удаление зубов</a></li>
+            <li class="navigation-list__item"><a href="#" class="navigation-list__link">лечение кариеса</a></li>
+            <li class="navigation-list__item"><a href="#" class="navigation-list__link">лечение пульпита</a></li>
+        </ul>
+    </nav>
+    <section class="aligners-for-children">
+        <div class="types-prices">
+            <h1><strong>Элайнеры</strong> для детей</h1>
+            <span class="types-prices__text">Профессиональный осмотр и чистка поможет все стоматологические проблемы у ребёнка</span>
+            <!-- такой же лист по стилю в таблице с шапкой изготовление элайнеров хочу сделать классы по БЭМ -->
+            <ul class="types-prices__list"> 
+                <li class="types-prices__list-item">Результат от 6 месяцев</li>
+                <li class="types-prices__list-item">Для детей в возрасте от 10 лет</li>
+            </ul>
+            <!-- разбить на 3 спана? -->
+            <span class="prices">от 78 900 ₽</span>
+            <div class="btn_group">
+                <button class="btn_prices">Виды и цены</button>
+                <!-- нужно сделать 1див общий с жельтым фоном, второй див сделать с фоном картинкой вставить картинку с верхним бордером, добавить 2 спана с текстом и через псевдо элементы добавить колечки календаря -->
+                <div class="result_group">
+                    <div class="calendar">
+                        <span class="calendar__text-1">2</span>
+                        <span class="calendar__text-2">недели</span>
+                        <img src="image/Rectangle 3075.svg" alt="" class="calendar__border-top">
+                    </div>
+                    <div class="result">
+                        <span>Первые результаты уже <strong>через 2 недели</strong></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="image_children">
+            <img src="image/child1.png" alt="">
+        </div>
+        <nav class="services">
+            <ul class="services__list">
+                <li class="services__list-item services__list-item1"><a href="#" class="services__list-link">Видео об услуге</a></li>
+                <li class="services__list-item services__list-item1"><a href="#" class="services__list-link">Виды и цены</a></li>
+                <li class="services__list-item services__list-item1"><a href="#" class="services__list-link">Врач</a></li>
+                <li class="services__list-item services__list-item1"><a href="#" class="services__list-link">Этапы лечения</a></li>
+                <li class="services__list-item"><a href="#" class="services__list-link">Решение проблем</a></li>
+                <li class="services__list-item"><a href="#" class="services__list-link">Фото работa</a></li>
+                <li class="services__list-item"><a href="#" class="services__list-link">Вопросы и ответы</a></li>
+                <li class="services__list-item"><a href="#" class="services__list-link">Контакты</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="sleep-therapy" id="sleep-therapy">
+        <div class="info-therapy">
+            <!-- поделючить шрифты для жирного -->
+            <h2 class="info-therapy__header"><strong>Лечение во сне</strong> — абсолютный комфорт и безопасность<br>для &#x1F9D2 ребенка</h2>
+            <!-- Наверное в один тег p лучше сделать для адаптива -->
+            <p class="info-therapy__text">Пока ребенок крепко спит, врач выполняет стоматологические манипуляции — <span>лечение пульпита, кариеса, удаление зубов</span>.</p> 
+            <p class="info-therapy__text">У ребенка <span>не останется неприятных воспоминаний</span> о лечении, а зубки полностью здоровы</p>
+            <!-- такой подход мне не нравится -->
+            <div class="doctor_part">
+                <div class="doctor_part__doctor">
+                    <!-- <img src="image/doctor_border.svg" alt="">  -->
+                    <img src="image/doc.png" alt="" class="doctor_part__doctor-image">
+                </div>
+                <span class="doctor_part__doctor-fio">Зиновьев Сергей Алексеевич</span>
+                <span class="doctor_part__doctor-text">детский стоматолог</span>
+            </div>
+            
+        </div>
+        <div class="image_video">
+            <div class="video_play">
+                <img src="image/sleep.jpg" alt="" class="video">
+                <img src="image/Vector.svg" alt="" class="play_circle">
+                <img src="image/Group 17783.svg" alt="" class="play_shadow">
+                <img src="image/Play.svg" alt="" class="play">
+            </div>
+        </div>
+        
+    </section>
+
+    <section class="short-video">
+        <!-- по центру сделал так больше нравится -->
+        <button class="short-video__switch short-video__switch__left"><img src="image/short_video_arrow.svg" alt=""></button>
+        <div class="short-video__video">
+            <p class="short-video__video-text"><strong>Противопоказания</strong> к лечению во сне &#128564</p>
+        </div>
+        <div class="short-video__video short-video__video__top">
+            <p class="short-video__video-text"><strong>В первый раз</strong> к &#129463 стоматологу</p>
+        </div>
+        <div class="short-video__video">
+            <p class="short-video__video-text"><strong>Безопасно</strong> &#128578 ли лечение во сне?</p>
+        </div>
+        <button class="short-video__switch"><img src="image/short_video_arrow.svg" alt=""></button>
+    </section>
+
+    <section class="menu-prices">
+        <!-- тоже сделал по центру -->
+        <h2 class="prices-header">Виды и цены</h2>
+        <!-- <div class="line"></div> -->
+        <span>Мы подбираем самые эффективные методики и технологии леченияс учетом особенностей каждого пациента</span>
+    
+    <table class="menu-aligners">
+        <tr >
+            <th colspan="2">
+                <div class="aligners-info">
+                    <p class="aligners-info__text">Детские элайнеры EuroKappa Junior</p>
+                    <div class="aligners-info__image">
+                        <img src="image/logo_eurokappa.svg" alt="" class="aligners-info__logo">
+                        <img src="image/table_arrow_btn.svg" alt="" class="aligners-info__arrow">  
+                    </div>      
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">3D-диагностика системы элайнеров Flexiligner</td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+        <tr >
+            <td class="menu-aligners__column-1">Изготовление элайнеров у детей (флексиков) Flexiligner</td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+       <tr>
+        <td class="menu-aligners__column-1">3D-диагностика системы элайнеров Flexiligner</td>
+        <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">Изготовление элайнеров у детей (флексиков) Flexiligner</td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+       </tr>
+       <tr>
+            <td class="menu-aligners__column-1">3D-диагностика системы элайнеров Flexiligner</td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+       </tr>
+        <tr>
+            <td colspan="2" class="menu-aligners__subtitle">
+                Изготовление элайнеров
+            </td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">
+                Диагностика
+                <ul class="menu-aligners__list">
+                    <span>В диагностику входит</span>
+                    <li class="menu-aligners__list-item">
+                        <img src="image/Group 120.svg" alt="">
+                        <span>Контейнер с зеркалом для хранения элайнеров</span>
+                    </li>
+                    <li class="menu-aligners__list-item">
+                        <img src="image/Group 120.svg" alt="">
+                        <span>Контейнер с зеркалом для хранения элайнеров – это специальная коробочка</span>
+                        
+                    </li>
+                    <li class="menu-aligners__list-item">
+                        <img src="image/Group 120.svg" alt="">
+                        <span>Устранить острые и хронические воспалительные процессы на десне, и на корнях (гингивит, пародонтит и др.)</span>
+        
+                    </li>
+                </ul>
+            </td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">
+                Изготовление элайнеров у детей (флексиков) Flexiligner
+            </td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">
+                3D-диагностика системы элайнеров Flexiligner
+            </td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="menu-aligners__subtitle">Консультация и диагностика</td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">Изготовление элайнеров у детей (флексиков) Flexiligner</td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">3D-диагностика системы элайнеров Flexiligner</td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+        <tr>
+            <td class="menu-aligners__column-1">Изготовление элайнеров у детей (флексиков) Flexiligner FLEXI START </td>
+            <td class="menu-aligners__column-2">40 000 ₽</td>
+        </tr>
+    </table>
+
+    <table class="menu-aligners">
+        <tr>
+            <th colspan="2">
+                <div class="aligners-info menu-addaligner">
+                    <p class="menu-addaligner__text">Детские элайнеры Флексики (Flexaligner)</p>
+                    <div class="aligners-info__image">
+                        <img src="image/Clip path group.svg" alt="" class="aligners-info__logo">
+                        <img src="image/arrow-table-pink.svg" alt="" class="aligners-info__arrow">
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+    
+    <table class="menu-aligners">
+        <tr>
+            <th colspan="2">
+                <div class="aligners-info menu-addaligner">
+                    <p class="menu-addaligner__text">Детские элайнеры Star Smile</p>
+                    <div class="aligners-info__image">
+                        <img src="image/logo-big-svg 1.svg" alt="" class="aligners-info__logo">
+                        <img src="image/arrow-table-pink.svg" alt="" class="aligners-info__arrow">
+                    </div>
+                </div>
+            </th>
+        </tr>
+    </table>
+
+</section>
+<section class="doctor-ostankovich">
+    <div class="doctor-ostankovich__information">
+        <h2>Останькович Виктория Михайловна</h2>
+        <h3>детский ортодонт</h3>
+        <p class="doctor-ostankovich__expiriens">стаж 24 года</p>
+        <!-- как спан не работает -->
+        <div class="expert">
+            <p><img src="image/starsmile.svg" alt="">
+            ТОП-5 экспертов <span class="expert__text__pink">StarSmile</span></p>
+            <p><img src="image/Kappa.svg" alt="">
+            ТОП-5 экспертов <span class="expert__text__blue">EuroKappa</span></p>
+        </div>
+        <p  class="doctor-ostankovich__information-text">Работая с малышами, всегда виден <strong>положительный эффект</strong> от лечения.<br>Я вижу, как растут мои пациенты, и радуюсь вместе с родителями их достижениям</p>
+        <button class="btn-style"><a href="#" class="btn-style__link doctor-ostankovich__button">Записаться на приём</a></button>
+    </div>
+    <div>
+        <img src="image/Ostankovich.png" alt="" class="doctor-ostankovich__photocard">
+    </div>
+</section>
+<section class="dental_treatment">
+    <h2>Преимущества лечения зубов во сне</h2>
+    <p>Мы подбираем самые эффективные методики и технологии лечения с учетом особенностей каждого пациента</p>
+    <div class="slider-ba">
+        <div class="before-after">
+            <img src="image/1do.png" alt="" class="before-after__image">
+            <img src="image/1after.png" alt="" class="before-after__image">
+            <span class="before-after__text-before">до</span>
+            <span class="before-after__text-after">после</span>
+            <p class="before-after__text">Лечение глубокого прикуса элайнерами в две строки</p>
+            <div class="before-after__patient">
+                <div class="before-after__patient__circle">
+                    <img src="image/purple_circle.svg" alt="" class="before-after__image-calendar__circle">
+                    <div class="before-after__patient-calendar">
+                        <span class="before-after__text-calendar">срок лечения</span>
+                        <img src="image/Rectangle 3075.svg" alt="" class="before-after__image-calendar__top">
+                    </div>
+                    <p class="before-after__time-treatment">Срок лечения</p>
+                    <p class="before-after__time-treatment mounth-treatment">18 месяцев</p>
+                </div>
+                <div class="before-after__patient__circle">
+                    <div class="before-after__green-circle">
+                        <img src="image/bear.svg" alt="" class="before-after__green-bear">
+                    </div>
+                    <p class="before-after__time-treatment">Пациент</p>
+                    <p class="before-after__time-treatment mounth-treatment">11 лет</p>
+                </div>
+            </div>
+        </div>
+        <div class="before-after">
+            <img src="image/1do.png" alt="" class="before-after__image">
+            <img src="image/1after.png" alt="" class="before-after__image">
+            <span class="before-after__text-before">до</span>
+            <span class="before-after__text-after">после</span>
+            <p class="before-after__text">Лечение глубокого прикуса элайнерами</p>
+            <div class="before-after__patient">
+                <div class="before-after__patient__circle">
+                    <img src="image/purple_circle.svg" alt="" class="before-after__image-calendar__circle">
+                    <div class="before-after__patient-calendar">
+                        <span class="before-after__text-calendar">срок лечения</span>
+                        <img src="image/Rectangle 3075.svg" alt="" class="before-after__image-calendar__top">
+                    </div>
+                    <p class="before-after__time-treatment">Срок лечения</p>
+                    <p class="before-after__time-treatment mounth-treatment">18 месяцев</p>
+                </div>
+                <div class="before-after__patient__circle">
+                    <div class="before-after__green-circle">
+                        <img src="image/bear.svg" alt="" class="before-after__green-bear">
+                    </div>
+                    <p class="before-after__time-treatment">Пациент</p>
+                    <p class="before-after__time-treatment mounth-treatment">11 лет</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="slider">
+        <img src="image/Group 18070.svg" alt="">
+    </div>
+</section>
+<section class="treatment">
+    <h2><strong>Как проходит</strong> лечение</h2>
+    <p class="treatment__stages">Этапы лечения за пять шагов</p>
+    <span class="treatment__text-hurt">не страшно</span>
+    <span class="treatment__text-pain">и не больно</span>
+    <p class="treatment__step one">1</p>
+    <p class="treatment__step two">2</p>
+    <p class="treatment__step three">3</p>
+    <p class="treatment__step four">4</p>
+    <p class="treatment__step five">5</p>
+    <img src="image/Group 17800.svg" alt="" class="treatment__image-arrow arrow_one">
+    <img src="image/Group 17799.svg" alt="" class="treatment__image-arrow arrow_two">
+    <img src="image/Group 17801.svg" alt="" class="treatment__image-arrow arrow_three">
+    <img src="image/Group 17802.svg" alt="" class="treatment__image-arrow arrow_four">
+    <div class="treatment__steps">
+        <div class="treatment__steps-block first_step">
+            <h3 class="treatment__steps-head">Погружение в сон</h3>
+            <p class="treatment__steps-text">Ребенок с родителями заходит в кабинет, где пациенту предлагают Севоран в качестве предварительного наркоза или сразу вводят Пропофол. Ребенок быстро засыпает</p>
+        </div>
+        <div class="treatment__steps-block    two_step">
+            <h3 class="treatment__steps-head">BIS-мониторинг</h3>
+            <p class="treatment__steps-text">Для контроля глубины внутривенного наркоза и введения точно дозированного объема препарата врачи используют современное оборудование, которое отслеживает самочувствие пациента на протяжении сна</p>
+        </div>
+        <div class="treatment__steps-block third_step">
+            <h3 class="treatment__steps-head">Погружение в сон</h3>
+            <p class="treatment__steps-text">Пока пациент спит, врачи выполняют запланированные стоматологические процедуры – под седацией проводят удаление молочных или постоянных разрушенных зубов, устраняют кариесы, пульпиты и периодонтиты</p>
+        </div>
+    </div>
+    <div class="treatment__steps four_five">
+        <div class="treatment__steps-block  four_step">
+            <h3 class="treatment__steps-head">Уход домой</h3>
+            <p class="treatment__steps-text">Хорошо отдохнувшие и здоровые дети после контрольного осмотра и общения с врачами отправляются домой вместе с родителями</p>
+        </div>
+        <div class="treatment__steps-block five_step">
+            <h3 class="treatment__steps-head">Пробужение</h3>
+            <p class="treatment__steps-text">После прекращения подачи препарата Пропофол пациент просыпается через 10-15 минут. Но иногда организм требует дополнительного естественного отдыха – сна на протяжении 30-40 минут. В таком случае ребенка оставляют досыпать необходимое ему время в отдельной палате</p>
+        </div>
+    </div>
+</section>
+<section class="problems">
+    <div class="problems__head">
+        <h2>Какие проблемы <span class="problems__head-text__green">можно решить элайнерами?</span></h2>
+        <img src="image/Vector 94.png" alt="" class="problems__head-line__blue">
+        <p>Закись азота позволяет провести лечение зубов с <strong>максимальным комфортом и безопасностью для ребенка</strong></p>
+    </div>
+    <div class="problems__info">
+        <div class="problems__info-group">
+            <div class="problems__info-item">
+                <img src="image/Group 17965.svg" alt="">
+                <h3>Отсутствие смыкания</h3>
+                <p>Разряженные зубы или щербинка Тремы разного размера и природы происхождения</p>
+            </div>
+            <div class="problems__info-item">
+                <img src="image/Group 17937.svg" alt="">
+                <h3>"Съехавший" ряд зубов</h3>
+                <p>Когда зубной ряд не правильно смыкается с другим</p>
+            </div>
+        </div>
+        <div class="problems__info-group">
+            <div class="problems__info-item">
+                <img src="image/Group 17935.svg" alt="">
+                <h3>Скученность</h3>
+                <p>Когда зубы располагаются так близко друг к другу, что наползают друг на друга</p>
+            </div>
+            <div class="problems__info-item">
+                <img src="image/Group 17932.svg" alt="">
+                <h3>Глубокий прикус</h3>
+                <p>Приводит к неправильному смыканию челюсти  и эстетическим проблемам: маленький подбородок, например. Мезиальные или дистальные прикусы</p>
+            </div>
+        </div>
+        <div class="problems__info-group">
+            <div class="problems__info-item">
+                <img src="image/Group 17935 (1).svg" alt="">
+                <h3>Выпирающий ряд зубов</h3>
+                <p>Когда верхний или нижний ряд сильно выдвинут вперед</p></div>
+            <div class="problems__info-item">
+                <img src="image/Group 17932 (1).svg" alt="">
+                <h3>“Хищные клыки”</h3>
+                <p>Когда клыки растут из верхней части десны и преобладают над передними зубами</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="question_answer">
+    <div class="info-question">
+        <h2><strong>вопросы</strong> и ответы</h2>
+        <table class="info-question__table info-question__table-beige">
+            <tr>
+                <th class="info-question__table-head">
+                    <p class="info-question__text">Можно ли элайнеры детям?</p><img src="image/arrow.svg" alt="" class="info-question__table-image">
+                </th>
+            </tr>
+        </table>
+        <table class="info-question__table info-question__table__active">
+            <tr>
+                <th class="info-question__table-head info-question__table-blue">
+                    <p class="info-question__text info-question__text__active">Что выбрать своему ребенку для исправления прикуса</p><img src="image/arrow.svg" alt="" class="info-question__table-image">
+                </th>
+            </tr>
+            <tr>
+                <td class="info-question__table-item">
+                    <p class="info-question__table-text">У большинства детей сейчас неровное положение зубов выявляется уже в возрасте 4-5 лет. Это часто объясняется наследственностью. Однако, не всегда виной тому только генетика.</p>
+                    <p class="info-question__table-text">Сегодня я хочу вам рассказать о самой передовой методике исправления прикуса у детей. Поговорим именно о детских элайнерах - о той методике, которая сейчас становится наиболее популярной в мире, и которая скоро заменит большинство брекетов и пластинок.</p>
+                </td>
+            </tr>
+        </table>
+
+        <table class="info-question__table info-question__table-beige">
+            <tr>
+                <th class="info-question__table-head">
+                    <p class="info-question__text">Что это такое</p><img src="image/arrow.svg" alt="" class="info-question__table-image">
+                </th>
+            </tr>
+        </table>
+        <table class="info-question__table info-question__table-beige">
+            <tr>
+                <th class="info-question__table-head">
+                    <p class="info-question__text">Что выбрать своему ребенку для исправления прикуса</p><img src="image/arrow.svg" alt="" class="info-question__table-image">
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="child_image">
+        <img src="image/smile.svg" alt="" class="smile">
+        <img src="image/image 14.png" alt="" class="border">
+    </div>
+</section>
+<section>
+    <img src="image/fon_for_iconmessendge.svg" alt="">
+</section>
+
+<footer class="footer">
+    <h2>контактная информация</h2>
+    <div class="contact-information">
+        <div class="contact-information__item">
+            <img src="image/metro_icon.svg" alt="" class="contact-information__image">
+            <span class="contact-information__text-1">Университет</span>
+            <span class="contact-information__text-2">пр. Вернадского, д. 8А</span>
+        </div>
+        <div>
+            <div class="contact-information__item">
+                <img src="image/purple_circle.svg" alt="" class="contact-information__image">
+                <img src="image/map_icon.svg" alt="" class="map-icon">
+                <a href="mailto:info@doctorlevin.ru" class="contact-information__text-1">info@doctorlevin.ru</a>
+                <span class="contact-information__text-2">Пишите нам</span>
+            </div>
+        </div>
+        <div>
+            <div class="contact-information__item">
+                <img src="image/telephone_icon.svg" alt="" class="contact-information__image">
+                <a href="tel:+74957755821" class="contact-information__text-1"> +7 (495) 775-58-21</a>
+                <span class="contact-information__text-2">Звоните с 9:00 до 21:00</span>
+            </div>
+        </div>
+    </div>
+    <form action="" method="post" class="footer__form">
+        <div class="footer__form-head">
+            <h1>Доктор Левин</h1>
+            <img src="image/kids.svg" alt="">
+        </div>
+        <div class="clinic-address">
+            <label for="adress" class="clinic-address__text">Адрес клиники</label>
+            <input type="text" id="adress" name="adress" value="г. Москва, ул. Льва Толстого, стр.5" class="clinic-address__text-value">
+            <div class="clinic-addres__add-info">
+                <a href="#">Схема проезда</a>
+                <a href="#">Координаты 55.732120.37.588526</a>
+            </div>
+        </div>
+        <div class="clinic-address">
+            <label for="adress-metro" class="clinic-address__text">Адрес клиники</label>
+            <div class="clinic-address__metro">
+                <img src="image/M_logo.svg" alt="">
+                <input type="text" id="adress-metro" name="adress-metro" value="Университет" class="clinic-address__text-value clinic-address__metro-name">
+                <p class="clinic-address__fiveminutes">5 минут от метро</p>                
+            </div>
+        </div>
+            <div class="clinic-address">
+                <label for="telephone" class="clinic-address__text">Телефон</label>
+                <input type="tel" id="telephone" name="telephone" value="+7 495 324-88-45" class="clinic-address__text-value">
+                <div class="clinic-addres__add-info">
+                </div>
+            </div>
+            <div class="clinic-address">
+                <label for="email" class="clinic-address__text">Адрес клиники</label>
+                <input type="email" id="email" name="email" value="info@doctorlevin.ru" class="clinic-address__text-value">
+                <div class="clinic-addres__add-info">
+                </div>
+            </div>
+            <div class="visiting-hours">
+                <div class="mon-fri">
+                    <span class="mon-fri__day">Понедельник - Пятница</span>
+                    <span class="mon-fri__time">с 10:00 до 20:00</span>
+                </div>
+                <div class="mon-fri">
+                    <div class="mon-fri">
+                        <span class="mon-fri__day">Суббота - Воскресенье</span>
+                        <span class="mon-fri__time">с 10:00 до 19:00</span>
+                    </div>
+                </div>
+            </div>
+            <button class="footer__form-btn footer__form-btn__pink">Записаться на приём</button>
+            <button class="footer__form-btn footer__form-btn__blue">Обратный звонок</button>
+    </form>
+    <div class="footer-last">
+        <div class="footer-media">
+            <div class="footer-media__levin">
+                <img src="image/doctor_levis_logo.png" alt="" class="doctor_levin_logo">
+                <span>ДОКТОР ЛЕВИН</span>
+                <span>ДЕТСКОЕ ОТДЕЛЕНИЕ</span>
+            </div>
+            <div class="footer-media__social">
+                <a href="https://vk.com/feed"><img src="image/vk-social-network-logo (2).png" alt="вконтатке"></a>
+                <a href="https://ru-ru.facebook.com/"><img src="image/facebook-network-logo.png" alt="фейсбук"></a>
+                <a href="https://web.telegram.org/"><img src="image/telega-network-logo.png" alt="вконтатке"></a>
+                <a href="https://www.youtube.com"><img src="image/youtue_logo.png" alt="ютуб"></a>
+                <a href="https://web.whatsapp.com/"><img src="image/whatsap_logo.png" alt="вотсап"></a>
+            </div>
+            <div class="footer-telephone">
+                <a href="tel:+74957755821">
+                    <p class="footer-telephone__number">+7 495 775-58-21</p>
+                    <p class="footer-telephone__text">заказать обратный звонок</p></a>
+            </div>
+            <button class="footer-btn">Записаться на приём</button>
+        </div>
+        <nav class="footer-navigation">
+            <ul class="footer-navigation__list">
+                <li class="footer-navigation__list-item">Преимущества</li>
+                <li class="footer-navigation__list-item">Почему мы</li>
+                <li class="footer-navigation__list-item">описание</li>
+                <li class="footer-navigation__list-item">Акция</li>
+                <li class="footer-navigation__list-item">Услуги</li>
+                <li class="footer-navigation__list-item">Седация</li>
+                <li class="footer-navigation__list-item">Стоимость</li>
+                <li class="footer-navigation__list-item">Врач</li>
+                <li class="footer-navigation__list-item">Галерея</li>
+            </ul>
+        </nav> 
+        <p class="footer-text">OOO Центр Приватной Стоматологии «Доктор Левин» ЦПС  «Доктор Левин» LLC.Лицензия ЛО-77-01-004442;  ИНН: 1117746533145; ОГРН: 7704785911 Без согласования с автором перепечатка и использование для контента веб-сайтов запрещены. 4 часть ГК РФ. Статья 1274. Цитирование в разумных пределах допускается с обязательным  указанием имени автора и источника заимствования с обязательной Активной ссылкой.</p> 
+    </div>
+</footer>
+</body>
+</html>
