@@ -107,19 +107,16 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     margin-top: 24px;
-    /* overflow: hidden; */
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .btn-style:hover{
     opacity: 0.8;
 }
 
-.btn-style__link{
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-}
 
 .navigation{
     width: 100%;
@@ -2306,7 +2303,71 @@ body{
     }
 }
 
+.popup-bg{
+    /* opacity: 0; */
+    display: none;
+    background-color: #b1b3b5;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
 
+.popup{
+    position: absolute;
+    
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* margin: auto; */
+    background-color: #284795;
+    z-index: 6;
+}
+
+.popup .popup-form{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 15px;
+    position: relative;
+    background-color: #FFF8F4;
+}
+
+.popup .popup__image-close{
+    position: absolute;
+    top:20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+
+}
+
+.popup-form__head{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.popup-form__head-text{
+    color: #142D84;
+    font-size: 30px;
+}
+
+.popup-bg__active{
+    /* opacity: 0.8; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    /* overflow: hidden; */
+}
 
 @font-face {
     font-family: "TT Firs Neue";
