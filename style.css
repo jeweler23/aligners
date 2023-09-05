@@ -23,7 +23,8 @@ body{
     border-bottom: 1px solid rgb(238, 236, 236);
     display: flex;
     box-sizing: border-box;
-    justify-content:flex-start;
+    justify-content:center;
+    gap: 40px;
 }
 
 .nav-button{
@@ -35,7 +36,7 @@ body{
     flex-wrap: wrap;
     align-items: center;
     margin-right: 70px;
-    margin-left: 149px;
+    /* margin-left: 149px; */
 }
 .logo__image {
     width: 70px;
@@ -106,6 +107,7 @@ body{
     border: none;
     background-size: contain;
     background-repeat: no-repeat;
+    background-color: transparent;
     margin-top: 24px;
     color: #FFF;
     font-size: 18px;
@@ -120,16 +122,17 @@ body{
 
 .navigation{
     width: 100%;
-    /* height: 50px;   */
+
     margin-top: 16px;
     margin-bottom: 13px;
-    /* outline: 1px solid black; */
+
 }
 
 .navigation-list{
     display: flex;
     list-style: none;
-    justify-content: flex-start;
+    justify-content: center;
+    gap: 15px;
 }
 
 .navigation-list__item{
@@ -160,15 +163,15 @@ body{
 }
 
 .types-prices{
-    width: 662px;
-    height: 443px;
-    margin-left: 149px;
+    width: 50%;
+    height: auto;
+    padding-left: 250px;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
     justify-content: center;
+    box-sizing: border-box;
     gap: 25px;
-    
 }
 
 
@@ -332,11 +335,12 @@ body{
 }
 
 .services__list{
-    padding: 21px 150px;
+    padding: 21px 120px;
     display: flex; 
     align-items: center;
+    justify-content: center;
     width: 100%;
-    gap: 46px;
+    gap: 50px;
     list-style: none;
 }
 
@@ -358,14 +362,16 @@ body{
     width: 100%;;
     background: #a210c7;
     display: flex;
+    justify-content: center;
     padding-bottom: 160px;
-
+    padding-top: 140px;
 }
 
 .sleep-therapy .info-therapy{
     /* height: 608px; */
     /* width: 50%; */
-    margin-top: 140px;
+    /* margin-top: 140px; */
+    box-sizing: border-box;
     margin-left: 148px; 
 }
 
@@ -396,8 +402,10 @@ body{
 .sleep-therapy .image_video .video_play{
     width: 671.345px;
     height: 378.724px;
-    margin-top: 200px; 
-    margin-left: 80px;
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 
 .sleep-therapy .image_video .video_play .video{
@@ -411,34 +419,33 @@ body{
     position: absolute;
     width: 120px;
     height: 119.5px;
-    top: 340px;
-    left: 370px;
+    top: 130px;
+    left: 300px;
     z-index: 2;   
 }
 
 .sleep-therapy .image_video .video_play .play_shadow{
     position: absolute;
-    top: 210px;
-    left: 240px;
+    top: 0px;
+    left: 168px;
     z-index: 1;   
 }
 
 .sleep-therapy .image_video .video_play .play{
     position: absolute;
-    top: 380px;
-    left: 415px;
+    top: 170px;
+    left: 345px;
     z-index: 3;   
 }
 
 .doctor_part{
-    width: 100%;
+    /* width: 100%; */
     height: 95px;
+    margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-content: flex-start;
-
-
 }
 
 .doctor_part__doctor{
@@ -696,12 +703,13 @@ body{
 
 .doctor-ostankovich__information{
     display: flex;
+    
     width: 757px;
     flex-direction: column;
     align-items: flex-start;
     gap: 21px;
     margin-top: 199px;
-    margin-left: 230px;
+    margin-left: 330px;
 }
 
 .doctor-ostankovich__information h2{
@@ -775,15 +783,16 @@ body{
     top: 0;
     left: 50%;
     margin-bottom: 60px;
+    outline: 1px solid black;
 }
 
 .doctor-ostankovich__photocard{
-    width: 635px;
+    /* width: 635px; */
+    width: auto;
     height: 940px;
-    box-shadow: 36px 4px 45px 0px rgba(0, 0, 0, 0.10), 0px 0px 23px 0px rgba(255, 248, 244, 0.50) inset;
+    /* box-shadow: 36px 4px 45px 0px rgba(0, 0, 0, 0.10), 0px 0px 23px 0px rgba(255, 248, 244, 0.50) inset; */
     position: relative;
     left:-150px;
-
 }
 
 .dental_treatment{
@@ -2334,6 +2343,10 @@ body{
     gap: 15px;
     padding-left: 15px;
     position: relative;
+    /* background-image: url("image/fon_form.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; */
     background-color: #FFF8F4;
 }
 
