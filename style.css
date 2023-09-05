@@ -2360,6 +2360,25 @@ body{
     font-size: 30px;
 }
 
+.popup-form input{
+    height: 30px;
+    width: 400px;
+}
+
+.popup-form__submit{
+    width: 200px;
+    height: 40px;
+    background-image: url("image/button_border_red.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    align-self: center;
+    margin: auto;
+    cursor: pointer;
+}
+
 .popup-bg__active{
     /* opacity: 0.8; */
     display: flex;
