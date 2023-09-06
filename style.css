@@ -772,7 +772,6 @@ body{
     line-height: 160%;
     width: 521px;
     /* height: 152px; */
-
 }
 
 
@@ -2323,9 +2322,59 @@ body{
     }
 
     .doctor-ostankovich{
-        width: 100%;
+        /* width: 500px; */
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* outline: 1px solid; */
     }
-}
+
+    .doctor-ostankovich__information{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 0px;
+        margin-left: 0;
+        order: 2;
+    }
+    .doctor-ostankovich__information h2{
+        text-align: center;
+        width: 400px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 133%; /* 42.56px */
+        letter-spacing: 0.32px;
+        
+    }
+    .doctor-ostankovich__information h3{
+        text-align: center;
+        /* font-family: Comic CAT; */
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .expert{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .doctor-ostankovich__information-text{
+        color: #20305B;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 160%;
+        width: auto;
+        text-align: center;
+        padding: 0px 15px;
+        /* height: 152px; */
+    }
+    .doctor-ostankovich__photocard{
+        width: auto;
+        height: 542px;
+        flex-shrink: 0;
+        left: 0px;
+    }
 
 .popup-bg{
     /* opacity: 0; */
