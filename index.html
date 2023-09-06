@@ -7,6 +7,22 @@
     <title>Элайнеры для детей</title>
 </head>
 <body>
+    <div class="popup-bg" id="popup-bg">
+        <div class="popup" id="popup">
+            <form action="" method="post" class="popup-form">
+                <img src="image/close_icon.png" alt="" class="popup__image-close">
+                <div class="popup-form__head">
+                    <h1 class="popup-form__head-text">Доктор Левин</h1>
+                    <img src="image/kids.svg" alt="">
+                </div>
+                <label for="name-client">Ваше имя:</label>
+                <input type="text" name="name-client" id="name-client" placeholder="Ваше имя">
+                <label for="number-phone">Ваш номер телефона:</label>
+                <input type="tel" id="number-phone" name="number-phone" pattern="8{0-9}10" placeholder="81231231232" maxlength="11">
+                <button type="submit" class="popup-form__submit">Заказать обратный звонок</button>
+            </form>
+        </div>
+    </div>
     <header class="header">
         <div class="logo">  
             <img src="image/Group 103.svg" alt="Доктор Левин" class="logo__image">
@@ -27,7 +43,7 @@
             <p>Задайте интересующий вопрос</p>
         </div>
         <!-- хочу сделать кнопку по контуру изображения -->
-        <button class="btn-style"><a href="#" class="btn-style__link">Записаться на приём</a></button>
+        <button class="btn-style popup-btn">Записаться на приём</button>
         <button class="nav-button">
             <img src="image/menu.png" alt="nav button">
         </button>   
@@ -265,7 +281,7 @@
             ТОП-5 экспертов <span class="expert__text__blue">EuroKappa</span></p>
         </div>
         <p  class="doctor-ostankovich__information-text">Работая с малышами, всегда виден <strong>положительный эффект</strong> от лечения.<br>Я вижу, как растут мои пациенты, и радуюсь вместе с родителями их достижениям</p>
-        <button class="btn-style"><a href="#" class="btn-style__link doctor-ostankovich__button">Записаться на приём</a></button>
+        <button class="btn-style doctor-ostankovich__button">Записаться на приём</button>
     </div>
     <div>
         <img src="image/Ostankovich.png" alt="" class="doctor-ostankovich__photocard">
@@ -571,5 +587,6 @@
         <p class="footer-text">OOO Центр Приватной Стоматологии «Доктор Левин» ЦПС  «Доктор Левин» LLC.Лицензия ЛО-77-01-004442;  ИНН: 1117746533145; ОГРН: 7704785911 Без согласования с автором перепечатка и использование для контента веб-сайтов запрещены. 4 часть ГК РФ. Статья 1274. Цитирование в разумных пределах допускается с обязательным  указанием имени автора и источника заимствования с обязательной Активной ссылкой.</p> 
     </div>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
