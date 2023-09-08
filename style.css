@@ -2345,6 +2345,48 @@ body{
 
     .treatment__text-hurt, .treatment__text-pain, .treatment__image-arrow,.arrow_one,.arrow_two,.arrow_three,.arrow_four{
         display: none;
+
+    }
+
+    /* какие проблемы можно решить элайнерами */
+    .problems{
+        height: auto;
+        flex-direction: column;
+    }
+    .problems__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+
+    }   
+    .problems__head h2{
+        width: 500px;
+        text-align: center;
+        font-size: 38px;
+        padding-top: 15px;
+    }
+    .problems__head-line__blue{
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+    .problems__head p{
+        width: 300px;
+        height: auto;
+        text-align: center;
+    }
+    .problems .problems__info{
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .problems__info-group{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    
     }
 }
 
