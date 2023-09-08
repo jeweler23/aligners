@@ -811,6 +811,26 @@ body{
     height: 6px;
 }
 
+.dental_treatment__switch{
+    width: 60px;
+    height: 60.5px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background: #a210c7;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    top: 585px;
+    left: 1550px;
+    z-index: 1;
+}
+
+.dental_treatment__switch__left{
+    transform: rotate(180deg);
+    left: 310px;
+}
+
 .dental_treatment h2{
     margin-top: 140px;
     margin-bottom: 40px;
@@ -823,19 +843,11 @@ body{
     flex: 1 1 100%;
 }
 
-.dental_treatment .line{
-    width: 66.377px;
-    height: 6.87px;
-    background-color: #4782CD;
-    margin: 20px 0px;
-}
-
 .dental_treatment p{
     width: 898px;
     color: #FFF;
     text-align: center;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 30px */
 
@@ -855,7 +867,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
     border-radius: 15px;
 }
 
@@ -947,6 +959,7 @@ body{
     font-weight: 400;
     text-align: start;
     margin-left: 15px;
+    
 }
 
 .before-after__patient__circle  .mounth-treatment{
@@ -1033,212 +1046,6 @@ body{
     position: absolute;
     top: 20%;
     left: 5%;
-}
-
-.dental_treatment .before_after_2{
-    width: 550px;
-    overflow: hidden;
-    border-radius: 15px 15px 15px 15px;
-    background: #FFF;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    border-radius: 15px;
-}
-
-.dental_treatment .before_after_2 .before{
-    padding: 0px;
-    margin: 0px;
-    width: 60.619px;
-    height: 42.68px;
-    position: absolute;
-    background-image: url("image/before.svg");
-    background-repeat: no-repeat;
-    text-align: center;
-    background-size: cover;
-    background-position: center;
-    color:#FFF;
-    font-size: 26px;
-    font-weight: 400;
-    top:30px;
-    left:30px;
-}
-
-.dental_treatment .before_after_2 .after{
-    padding: 0px;
-    margin: 0px;
-    width: 101.328px;
-    height: 51.5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 30px;
-    top: 300px;
-    background-image: url("image/after.svg");
-    background-repeat: no-repeat;
-    text-align: center;
-    background-position: center;
-    color: #FFF;
-    font-size: 26px;
-    font-weight: 400;
-}
-
-.dental_treatment .before_after_2 p{
-    width: auto;
-    color: #20305B;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 140%; /* 33.6px */
-    padding: 20px 30px 52px 30px;
-    text-align: start;
-}
-
-
-.dental_treatment .before_after_2 .treatment_patient{
-    display: flex;
-    width: 548px;
-    gap: 94px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    height: 64px;
-    width: 197px;
-    padding: 0px 30px 30px 30px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .therapy{
-    
-    flex: 0 0 auto;
-    color:  #6D727E;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 0px;
-    margin: 5px 0px 0px 15px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .month{
-    color: #20305B;
-    font-size: 22px;
-    font-weight: 500;
-    padding: 0px;
-    margin: 0px;
-    flex: 0 0 auto;
-    margin-left:  15px;;
-}
-
-
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .item1{
-    width: 64px;
-    height: 64px;
-    background-image: url("image/purple_circle.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .item1 .item2{
-    width: 38.569px;
-    height: 34.776px;
-    background-image: url("image/Rectangle\ 3078.svg");
-    background-repeat: no-repeat;
-    background-size: 38.569px 34.776px;
-    margin: 16px 13px 13px 13px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .item1 .item2 p{
-    color: #284795;
-    text-align: center;
-    font-size: 7px;
-    font-weight: 400;
-    text-transform: uppercase;
-    transform: rotate(-2.87deg);
-    padding: 0px;
-    padding-top: 10px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .item1 .item3{
-    width: 39.834px;
-    height: 9.484px;
-    background-image: url("image/Rectangle\ 3075.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: repeat;
-    position: absolute;
-    top: 17px;
-    left: 13px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .treatment .item1 .item4{
-    position: absolute;
-    left: 20px;
-    top: 14px;
-    width: 3.676px;
-    height: 6.893px;
-    transform: rotate(-6.676deg);
-    flex-shrink: 0;
-    border-radius: 6.241px;
-    background: #FFF;
-}
-.dental_treatment .before_after_2 .treatment_patient .treatment .item1 .item5{
-    position: absolute;
-    left: 40px;
-    top: 14px;
-    width: 3.676px;
-    height: 6.893px;    
-    transform: rotate(6.676deg);
-    flex-shrink: 0;
-    border-radius: 6.241px;
-    background: #FFF;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .patient{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 64px;
-    width: 197px;
-    padding: 0px 30px 30px 30px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .patient .green_back{
-    width: 64px;
-    height: 64px;
-    background-image: url("image/green_circle.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .patient .green_back img{
-    position: absolute;
-    top:10px;
-    left: 5px;
-}
-
-.dental_treatment .before_after_2 .treatment_patient .patient p{
-    color:  #6D727E;
-    font-size: 14px;
-    font-weight: 400;
-    padding: 0px;
-    flex: 0 0 45%;
-    display: flex;
-    align-items: center;
-    margin-right: 40px;
-    
-}
-
-.dental_treatment .before_after_2 .treatment_patient .patient .old{
-    color:#20305B;
-    font-size: 22px;
-    font-weight: 500;
 }
 
 .dental_treatment .slider{
@@ -1977,6 +1784,7 @@ body{
         width: 768px;
         overflow-x: hidden;
         scroll-behavior:smooth;
+        /* box-sizing: content-box; */
     }
 
     /* header*/
@@ -2243,13 +2051,13 @@ body{
 
     /* таблица виды и цены */
     .menu-prices{
-        outline: 1px solid black;
+        padding: 50px 0px;
     }
     .prices-header{
         font-size: 32px;
     }
     .menu-prices::after{
-        top: 190px;
+        top: 100px;
         left: 350px;
     }
 
@@ -2375,6 +2183,89 @@ body{
         flex-shrink: 0;
         left: 0px;
     }
+
+    /* до после */
+    .dental_treatment::after{
+        top: 90px;
+        left: 350px;
+        width: 66.377px;
+        height: 6px;
+    }
+
+    .dental_treatment h2{
+        margin-top: 40px;
+        font-size: 32px;
+        letter-spacing: 0.32px;
+    }
+
+    .dental_treatment p{
+        width: auto;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+    }
+
+    .slider-ba{
+        justify-content: center;
+    }
+
+    .before-after__active{
+        display: none;
+    }
+
+    .before-after{
+        width: 400px;
+
+    }
+
+    .dental_treatment__switch{
+        top: 550px;
+        left: 600px;
+    }
+    
+    .dental_treatment__switch__left{
+        left: 110px;
+    }
+    
+    .before-after__text-after{
+        left: 30px;
+        top: 220px;
+    }
+
+    .before-after .before-after__patient{
+        height: auto;
+        flex-direction: column;
+        /* margin: 5px; */
+        gap: 15px;
+    }
+    .before-after__patient__circle .before-after__patient-calendar{
+        top: 12%;
+        left: 12px;
+    }
+    .treatment{
+        /* width: 1657px; */
+        height: auto;
+        background: #FFF8F4;
+        /* position: relative; */
+    }
+    .treatment h2{
+        width: 300px;
+        height: auto;
+        padding-top: 1px;
+        /* margin-left: 320px; */
+        text-align: center;
+        margin: auto;
+        color: #20305B;
+        font-size: 32px;
+    }
+    .treatment__stages{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        margin: auto;
+    }
+}
 
 .popup-bg{
     /* opacity: 0; */
