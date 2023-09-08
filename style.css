@@ -2243,6 +2243,8 @@ body{
         top: 12%;
         left: 12px;
     }
+
+    /* как проходит лечение */
     .treatment{
         /* width: 1657px; */
         height: auto;
@@ -2252,7 +2254,7 @@ body{
     .treatment h2{
         width: 300px;
         height: auto;
-        padding-top: 1px;
+        padding-top: 10px;
         /* margin-left: 320px; */
         text-align: center;
         margin: auto;
@@ -2264,6 +2266,85 @@ body{
         top: 0px;
         right: 0px;
         margin: auto;
+    }
+
+    .one{
+        top: 170px;
+        left: 530px;
+    }
+    
+    .two{
+        background-image: url("image/2.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 480px;
+        left: 530px;
+    }
+    
+    .three{
+        background-image: url("image/3.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 800px;
+        left: 530px;
+    }
+    
+    .four{
+        background-image: url("image/4.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 1150px;
+        left: 530px;
+    }
+    
+    .five{
+        background-image: url("image/5.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 1410px;
+        left: 530px;
+    }
+    .treatment__steps{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 35px;
+    }
+
+    .treatment .first_step {
+        align-self: center;
+        margin: 10px auto;
+    }
+
+    .treatment .two_step {
+        align-self: center;
+    }
+    
+    .treatment .third_step {
+        align-self: center;
+    }
+    .treatment .four_five{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        height: auto;
+    }
+    .treatment .four_step{
+        align-self: center;
+        margin-left: 0px;
+    }
+    
+    .treatment  .five_step{
+        align-self: center;
+    }
+
+    .treatment__text-hurt, .treatment__text-pain, .treatment__image-arrow,.arrow_one,.arrow_two,.arrow_three,.arrow_four{
+        display: none;
     }
 }
 
