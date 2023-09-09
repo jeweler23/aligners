@@ -29,6 +29,7 @@ body{
 
 .nav-button{
     display: none;
+    background-color: transparent;
 }
 
 .logo {
@@ -278,7 +279,7 @@ body{
 }
 
 .calendar::before{
-    content: url("image/calendar_ring.svg");
+    content: url("image/calendar_ring1.svg");
     z-index: 1;
     position: absolute;
     top: -9px;
