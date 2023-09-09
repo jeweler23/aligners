@@ -1,0 +1,754 @@
+@media (max-width:768px){
+    body{
+        width: 768px;
+        overflow-x: hidden;
+        scroll-behavior:smooth;
+        /* box-sizing: content-box; */
+    }
+
+    /* header*/
+
+    .header{
+        width: 100%;
+        height: 70px;
+        justify-content: space-around;
+        align-items: center;
+        gap: 26px;
+    }
+    .logo{
+        margin: 12px 26px 12px 17px;
+        height: 70px;
+    }
+    .nav-button{
+        display: block;
+        border: none;
+    }
+    .logo__image{
+        width: 46px;
+        height: 46px;
+    }
+    .quastion{
+        margin: 0px;
+        padding: 0px;
+    }
+    .quastion a{
+        font-size: 27px;
+        font-weight: 600;
+        
+    }
+    .quastion p{
+        font-size: 15px;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: -0.12px;
+    }
+
+    .logo-adress,.btn-style,.navigation{
+        display: none;
+    }
+
+    /* элайнеры для детей */
+    .aligners-for-children{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+    }
+    .types-prices{
+        order: 1;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 0px;
+        padding-left: 0px;
+    }
+    .types-prices h1{
+        color: #FFF;
+        margin-top: 0px;
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+    }
+    .types-prices__text{
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+        padding: 5px 10px 15px 10px;
+        text-align: center;
+    }
+    .btn_group{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        gap:9px;
+    }
+    .result_group{
+        order: 0;
+    }
+    .btn_prices{
+        order: 1;
+    }
+    .aligners-for-children .image_children{
+        order: 0;
+        width: 457.862px;
+        height: 373.778px;
+        margin: auto;
+    }
+    .services{
+        order: 2;
+        width: 100%;
+    }
+    .services__list{
+        padding: 21px 0px;
+        display: flex; 
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        gap: 50px;
+        list-style: none;
+    }
+    .services__list-item{
+        display: none;
+    }
+    .services__list-item1{
+        display: block;
+        /* outline: 1px solid black; */
+    }
+    .prices{
+        display: none;
+    }
+
+    /* лечение во сне */
+    .sleep-therapy{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sleep-therapy .info-therapy{
+        margin-top: 40px;
+        margin-left: 0px;
+        width: 100%;
+    }
+    .info-therapy__header{
+        width: auto;
+        height: auto;
+        font-size: 38px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 40px;
+        order: 0;
+    }
+    .info-therapy__text{
+        width: auto;
+        text-align: center;
+        margin: 0px 40px;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 172%; /* 34.4px */ 
+        order: 2;  
+    }
+    .doctor_part{
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 150px;
+        margin-top: 30px;
+    }
+
+    .doctor_part__doctor{
+        flex: 1 1 100%;
+        border-radius: 50%;
+        width: 70px;
+    }
+
+    .doctor_part__doctor-image{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: -3px;
+        top: 15px;
+    }
+
+    .doctor_part__doctor-fio{
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    .doctor_part__doctor-text{
+        /* font-family: Comic CAT; */
+        font-size: 16px;
+
+    }
+
+    .sleep-therapy{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .sleep-therapy .image_video{
+        width: 100%;
+        /* height: auto; */
+        position: relative;
+    }
+    .sleep-therapy .image_video .video_play{
+        /* width: auto; */
+        /* margin: 15px 40px; */
+        order: 1;
+    }
+    
+    .sleep-therapy .image_video .video_play .video{
+        border-radius: 0px;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .sleep-therapy .image_video .video_play .play_circle, .sleep-therapy .image_video .video_play .play_shadow, .sleep-therapy .image_video .video_play .play{
+        display: none;
+    }
+
+    /* шорт видео */
+    .short-video{
+        height: 577px;
+        width: 100%;
+        background: #a210c7;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        justify-content: center;
+        overflow-x: hidden;
+        /* outline: 1px solid black; */
+        /* box-sizing: content-box; */
+    }
+
+    .short-video__switch{
+        /* придется через абсолют */
+        position: absolute;
+        top: 300px;
+        right: 0px;
+        background-color: transparent;
+    }
+
+    .short-video__switch__left{
+        transform: rotate(180deg);
+        margin-left: 15px;
+        top: 300px;
+        left: 0px;
+        margin-left: 0px;
+    }
+    .short-video__video{
+        /* flex: 0; */
+        width: 500px;
+        height: 470px;
+        margin: 42px 0px 65px 0px;
+        align-items: center;
+        background-size: cover;
+        padding: 0px;
+        /* flex: 1 1 100%; */
+    }
+
+    .short-video__video__top{
+        align-self: center;
+        flex: 1 1 100%;
+        /* margin: 42px 45px 65px 45px; */
+        /* margin: 42px 0px 65px 0px; */
+    }
+    .short-video__video:first-child{
+        margin-left: 0px;
+    }
+
+    .short-video__video-text{
+        align-self: flex-end;
+        padding: 0px 0px 15px 20px;
+        font-family: TT Firs Neue;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 125%; /* 27.5px */
+    }
+
+    /* таблица виды и цены */
+    .menu-prices{
+        padding: 50px 0px;
+    }
+    .prices-header{
+        font-size: 32px;
+    }
+    .menu-prices::after{
+        top: 100px;
+        left: 350px;
+    }
+
+    .menu-prices span{
+        width: auto;
+        /* width: 898px; */
+        padding: 0px 17px;
+        font-size: 26px;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+        margin-top: 46px;
+    }
+
+    .menu-aligners{
+        width: 100%;
+        height: auto;
+    }
+    .aligners-info{
+        height: 64px;
+        /* width: auto; */
+        
+        background: #474A6A;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        /* padding-left: 10px; */
+    }
+    .aligners-info__text{
+        font-size: 18px;;
+        font-weight: 500;
+        line-height: 125%; /* 22.5px */
+        /* outline: 1px solid black; */
+    }
+    .aligners-info__image{
+        /* margin-left: 80px; */
+        /* outline: 1px solid black; */
+    }
+
+    .aligners-info__logo{
+        margin-right: 0px;
+        width: 89px;
+        height: 40px;
+    }
+    .menu-aligners td{
+        /* height: 52px; */
+        padding: 0px 10px;
+        height: auto;
+        /* margin: 0px 20px; */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #000;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 165%;
+        /* outline: 1px solid black; */
+    }
+    .menu-aligners__column-1{
+        padding-left: 0px;
+    
+    }
+    .menu-aligners__column-2{
+        text-align: start;
+        padding-right: 0px;
+    
+    }
+    .menu-addaligner{
+        background: #FFF9F4;
+    }
+
+    .doctor-ostankovich{
+        /* width: 500px; */
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        /* outline: 1px solid; */
+    }
+
+    .doctor-ostankovich__information{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 0px;
+        margin-left: 0;
+        order: 2;
+    }
+    .doctor-ostankovich__information h2{
+        text-align: center;
+        width: 400px;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 133%; /* 42.56px */
+        letter-spacing: 0.32px;
+        
+    }
+    .doctor-ostankovich__information h3{
+        text-align: center;
+        /* font-family: Comic CAT; */
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .expert{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .doctor-ostankovich__information-text{
+        color: #20305B;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 160%;
+        width: auto;
+        text-align: center;
+        padding: 0px 15px;
+        /* height: 152px; */
+    }
+    .doctor-ostankovich__photocard{
+        width: auto;
+        height: 542px;
+        flex-shrink: 0;
+        left: 0px;
+    }
+
+    /* до после */
+    .dental_treatment::after{
+        top: 90px;
+        left: 350px;
+        width: 66.377px;
+        height: 6px;
+    }
+
+    .dental_treatment h2{
+        margin-top: 40px;
+        font-size: 32px;
+        letter-spacing: 0.32px;
+    }
+
+    .dental_treatment p{
+        width: auto;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%; /* 30px */
+    }
+
+    .slider-ba{
+        justify-content: center;
+    }
+
+    .before-after__active{
+        display: none;
+    }
+
+    .before-after{
+        width: 400px;
+
+    }
+
+    .dental_treatment__switch{
+        top: 550px;
+        left: 600px;
+    }
+    
+    .dental_treatment__switch__left{
+        left: 110px;
+    }
+    
+    .before-after__text-after{
+        left: 30px;
+        top: 220px;
+    }
+
+    .before-after .before-after__patient{
+        height: auto;
+        flex-direction: column;
+        /* margin: 5px; */
+        gap: 15px;
+    }
+    .before-after__patient__circle .before-after__patient-calendar{
+        top: 12%;
+        left: 12px;
+    }
+
+    /* как проходит лечение */
+    .treatment{
+        /* width: 1657px; */
+        height: auto;
+        background: #FFF8F4;
+        /* position: relative; */
+    }
+    .treatment h2{
+        width: 300px;
+        height: auto;
+        padding-top: 10px;
+        /* margin-left: 320px; */
+        text-align: center;
+        margin: auto;
+        color: #20305B;
+        font-size: 32px;
+    }
+    .treatment__stages{
+        position: relative;
+        top: 0px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .one{
+        top: 170px;
+        left: 530px;
+    }
+    
+    .two{
+        background-image: url("image/2.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 480px;
+        left: 530px;
+    }
+    
+    .three{
+        background-image: url("image/3.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 800px;
+        left: 530px;
+    }
+    
+    .four{
+        background-image: url("image/4.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 1150px;
+        left: 530px;
+    }
+    
+    .five{
+        background-image: url("image/5.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 1410px;
+        left: 530px;
+    }
+    .treatment__steps{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 35px;
+    }
+
+    .treatment .first_step {
+        align-self: center;
+        margin: 10px auto;
+    }
+
+    .treatment .two_step {
+        align-self: center;
+    }
+    
+    .treatment .third_step {
+        align-self: center;
+    }
+    .treatment .four_five{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        height: auto;
+    }
+    .treatment .four_step{
+        align-self: center;
+        margin-left: 0px;
+    }
+    
+    .treatment  .five_step{
+        align-self: center;
+    }
+
+    .treatment__text-hurt, .treatment__text-pain, .treatment__image-arrow,.arrow_one,.arrow_two,.arrow_three,.arrow_four{
+        display: none;
+
+    }
+
+    /* какие проблемы можно решить элайнерами */
+    .problems{
+        height: auto;
+        flex-direction: column;
+    }
+    .problems__head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+
+    }   
+    .problems__head h2{
+        width: 500px;
+        text-align: center;
+        font-size: 38px;
+        padding-top: 15px;
+    }
+    .problems__head-line__blue{
+        position: absolute;
+        top: 200px;
+        left: 200px;
+    }
+    .problems__head p{
+        width: 300px;
+        height: auto;
+        text-align: center;
+    }
+    .problems .problems__info{
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .problems__info-group{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    .question_answer{
+        /* flex-direction: column;    */
+    }
+
+    .info-question{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* width: 779px; */
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+    .info-question h2{
+        color: #20305B;
+        font-size: 40px;
+        padding-top: 40px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .info-question h2::after{
+        content: url("image/line_blue.svg");
+    }
+
+    .info-question__table{
+        margin-bottom: 15px;
+        padding: 10px 10px;
+        width: 730px;
+
+    }
+    .info-question__table__active{
+        border-collapse:separate;
+    }
+    
+
+    .info-question__table-head{
+        height: 60px;
+    }
+
+    .info-question__table-text{
+        width: auto;
+        color:  #20305B;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 165%; /* 29.7px */
+    }
+
+    .child_image{
+        display: none;
+    }
+
+    /* футер */
+    .footer h2{
+        display: none;
+    }
+
+    .footer h3{
+        display: block;
+        color:  #FFF;
+        text-align: center;
+        font-family: Comic CAT;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        padding: 15px;
+    }
+    .contact-information{
+        flex-direction: column;
+        height: auto;
+        gap: 30px;
+        margin: 20px auto;
+    }
+
+    .footer-last{
+        height: auto;
+        width: 100%;
+    }
+
+    .footer-media{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .footer-navigation{
+        width: 768px;
+        height: auto;
+        background: none;
+        margin-left: 0px;
+    }
+
+    .footer-navigation__list{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer-telephone {
+        margin-left: 0px;
+    }
+    .footer-media .footer-btn{
+        margin-left: 0px;
+    }
+    
+
+    .footer-text{
+        width: 600px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 170%; /* 20.4px */
+        margin-top: 25px;
+        margin-left: 0px;
+        margin: 10px auto;
+    }
+
+    .logo-adress__active{
+        display: flex;
+    }
+    .logo__image{
+        width: 54px;
+        height: 54px;
+    }
+    .logo__text__grey{
+    }
+    .logo__text__white{
+        color: #FFF;
+        font-family: TT Firs Neue;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .footer-media__levin,.footer-media__social{
+        display: none;
+    }
+}
