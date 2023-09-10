@@ -76,6 +76,7 @@
         text-align: center;
         font-size: 38px;
         font-weight: 700;
+        width: 50%;
     }
     .types-prices__text{
         color: #FFF;
@@ -85,6 +86,25 @@
         padding: 5px 10px 15px 10px;
         text-align: center;
     }
+
+    .types-prices__list{
+        display: flex;
+        flex-direction: column;
+        /* gap: 50px; */
+    }
+
+    .types-prices__list-item{
+        position: relative;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .types-prices__list-item::before{
+        position: absolute;
+        left: 50%;
+        top: -70%;
+        transform: translateX(-50%);
+    }
+
     .btn_group{
         flex-direction: column;
         align-items: center;
@@ -104,6 +124,8 @@
         height: auto;
         margin: auto;
     }
+
+
     .services{
         order: 2;
         width: 100%;
@@ -116,6 +138,7 @@
         justify-content: center;
         gap: 50px;
         list-style: none;
+        gap: 25px;
     }
     .services__list-item{
         display: none;
@@ -124,6 +147,11 @@
         display: block;
         /* outline: 1px solid black; */
     }
+
+    .services__list-link{
+        font-size: 16px;
+    }
+
     .prices{
         display: none;
     }
@@ -139,14 +167,13 @@
         width: 100%;
     }
     .info-therapy__header{
-        width: auto;
-        height: auto;
+        width: 100%;
+        text-align: center;
         font-size: 38px;
         font-weight: 700;
-        text-transform: uppercase;
-        text-align: center;
-        padding: 15px 40px;
+        padding: 15px 0px;
         order: 0;
+        text-transform: none;
     }
     .info-therapy__text{
         width: auto;
@@ -168,6 +195,7 @@
         flex: 1 1 100%;
         border-radius: 50%;
         width: 70px;
+        order: 1;
     }
 
     .doctor_part__doctor-image{
@@ -186,23 +214,36 @@
     .doctor_part__doctor-text{
         /* font-family: Comic CAT; */
         font-size: 16px;
-
     }
 
     .sleep-therapy{
         padding-bottom: 0px;
         padding-top: 0px;
+        width: auto;
+        height: 100%;
     }
 
     .sleep-therapy .image_video{
-        width: 100%;
+        width: auto;
+        height: 207px;
+        margin-top: 10px;
+        padding: 0px;
         /* height: auto; */
         position: relative;
     }
     .sleep-therapy .image_video .video_play{
         /* width: auto; */
-        /* margin: 15px 40px; */
-        order: 1;
+        margin: 0px 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .sleep-therapy .image_video .video_play .video{
+        height: 100%;
+    }
+
+    .sleep-therapy .image_video .sleep-therapy .image_video .video{
+        width: 100%;
+        height: auto;
     }
     
     .sleep-therapy .image_video .video_play .video{
@@ -217,7 +258,7 @@
 
     /* шорт видео */
     .short-video{
-        height: 577px;
+        height: auto;
         width: 100%;
         background: #a210c7;
         display: flex;
@@ -232,6 +273,8 @@
 
     .short-video__switch{
         /* придется через абсолют */
+        width: 50px;
+        height: 50px;
         position: absolute;
         top: 300px;
         right: 0px;
@@ -242,39 +285,34 @@
     .short-video__switch__left{
         transform: rotate(180deg);
         margin-left: 15px;
-        top: 300px;
+        top: 305px;
         left: 0px;
         margin-left: 0px;
     }
     .short-video__video{
-        /* flex: 0; */
-        width: 500px;
-        height: 470px;
-        margin: 42px 0px 65px 0px;
-        align-items: center;
-        background-size: cover;
-        padding: 0px;
-        /* flex: 1 1 100%; */
+        display: none;
     }
 
     .short-video__video__top{
+        display: block;
         align-self: center;
         flex: 1 1 100%;
-        /* margin: 42px 45px 65px 45px; */
-        /* margin: 42px 0px 65px 0px; */
     }
     .short-video__video:first-child{
         margin-left: 0px;
     }
 
     .short-video__video-text{
-        align-self: flex-end;
-        padding: 0px 0px 15px 20px;
+        width: 200px;
+        left: 55px;
+        padding: 0px;
         font-family: TT Firs Neue;
         font-size: 19px;
         font-weight: 600;
         line-height: 125%; /* 27.5px */
+        outline: 1px solid black;
     }
+    
 
     /* таблица виды и цены */
     .menu-prices{
@@ -285,7 +323,7 @@
     }
     .menu-prices::after{
         top: 100px;
-        left: 350px;
+        left: 150px;
     }
 
     .menu-prices span{
@@ -303,25 +341,25 @@
         height: auto;
     }
     .aligners-info{
-        height: 64px;
-        /* width: auto; */
-        
+        height: 76px;
         background: #474A6A;
         border-radius: 10px 10px 0px 0px;
         display: flex;
         align-items: center;
-        justify-content:space-between;
-        /* padding-left: 10px; */
+        justify-content:space-around;
+        padding-left: 0px;
     }
     .aligners-info__text{
         font-size: 18px;;
         font-weight: 500;
         line-height: 125%; /* 22.5px */
         /* outline: 1px solid black; */
+        
     }
     .aligners-info__image{
         /* margin-left: 80px; */
         /* outline: 1px solid black; */
+        margin-left: 10px;
     }
 
     .aligners-info__logo{
@@ -330,10 +368,8 @@
         height: 40px;
     }
     .menu-aligners td{
-        /* height: 52px; */
         padding: 0px 10px;
         height: auto;
-        /* margin: 0px 20px; */
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -341,7 +377,6 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 165%;
-        /* outline: 1px solid black; */
     }
     .menu-aligners__column-1{
         padding-left: 0px;
@@ -352,8 +387,17 @@
         padding-right: 0px;
     
     }
+
+    .menu-aligners__list {
+        list-style: none;
+        width: 100%;
+    }
     .menu-addaligner{
         background: #FFF9F4;
+    }
+
+    .menu-addaligner__text{
+        font-size: 21px;
     }
 
     .doctor-ostankovich{
@@ -361,6 +405,7 @@
         flex-direction: column;
         align-items: center;
         height: auto;
+        width: 100%;
         /* outline: 1px solid; */
     }
 
@@ -377,7 +422,7 @@
     }
     .doctor-ostankovich__information h2{
         text-align: center;
-        width: 400px;
+        width: 100%;
         font-size: 32px;
         font-weight: 600;
         line-height: 133%; /* 42.56px */
