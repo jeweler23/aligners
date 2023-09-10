@@ -458,8 +458,8 @@
 
     /* до после */
     .dental_treatment::after{
-        top: 90px;
-        left: 350px;
+        top: 170px;
+        left: 160px;
         width: 66.377px;
         height: 6px;
     }
@@ -472,6 +472,7 @@
 
     .dental_treatment p{
         width: auto;
+        padding: 0px 10px;
         color: #FFF;
         font-size: 16px;
         font-weight: 400;
@@ -480,7 +481,8 @@
 
     .slider-ba{
         justify-content: center;
-        width: 100%;
+        width: auto;
+        padding: 0px 10px;
     }
 
     .before-after__active{
@@ -488,17 +490,22 @@
     }
 
     .before-after{
-        width: 400px;
-
+        width: auto;
     }
 
     .dental_treatment__switch{
-        top: 550px;
-        left: 600px;
+        top: 460px;
+        left: 375px;
+        /* right: px; */
+        transform: translateX(-100%);
+        background-color: transparent;
     }
     
     .dental_treatment__switch__left{
-        left: 110px;
+        left: 0px;
+        transform: translateX(0%);
+        transform: rotate(180deg);
+        background-color: transparent;
     }
     
     .before-after__text-after{
@@ -516,10 +523,13 @@
         top: 12%;
         left: 12px;
     }
+    .dental_treatment .slider{
+        margin-bottom: 40px;
+    }
+    
 
     /* как проходит лечение */
     .treatment{
-        /* width: 1657px; */
         height: auto;
         background: #FFF8F4;
         /* position: relative; */
@@ -541,31 +551,22 @@
         margin: auto;
     }
 
+    .treatment__steps .treatment__steps-block{
+        padding: 0px;
+    }
+
     .treatment__steps{
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        gap: 35px;
+        gap: 25px;
+        margin-top: 20px;
     }
 
     .treatment .first_step {
-        align-self: center;
-        margin: 10px auto;
+        margin: 0px auto;
     }
 
-    .treatment .two_step {
-        align-self: center;
-    }
-    
-    .treatment .third_step {
-        align-self: center;
-    }
     .treatment .four_five{
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        gap: 35px;
-        height: auto;
+        margin-top: 25px;
+
     }
     .treatment .four_step{
         align-self: center;
@@ -576,37 +577,25 @@
         align-self: center;
     }
 
-    .treatment__text-hurt, .treatment__text-pain, .treatment__image-arrow,.arrow_one,.arrow_two,.arrow_three,.arrow_four{
-        display: none;
-
-    }
-
     /* какие проблемы можно решить элайнерами */
-    .problems{
-        height: auto;
-        flex-direction: column;
-    }
+
     .problems__head {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        width: auto;
 
     }   
     .problems__head h2{
-        width: 500px;
-        text-align: center;
-        font-size: 38px;
-        padding-top: 15px;
+        width: auto;
+        height: auto;
+        font-size: 36px;
     }
+    .problems__head-text__green{
+        font-size: 36px;
+    }
+
     .problems__head-line__blue{
-        position: absolute;
-        top: 200px;
-        left: 200px;
+        top: 170px;
+        left: 15px;
     }
     .problems__head p{
-        width: 300px;
         height: auto;
         text-align: center;
     }
@@ -614,58 +603,44 @@
         align-items: center;
         margin-left: 0px;
         margin-top: 50px;
+        gap: 10px;
     }
     .problems__info-group{
         display: flex;
         align-items: center;
-        gap: 50px;
-    }
-    .question_answer{
-        /* flex-direction: column;    */
-    }
-
-    .info-question{
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        /* width: 779px; */
-        margin-left: 0px;
-        gap: 20px;
+        gap: 10px;
     }
 
-    .info-question h2{
-        color: #20305B;
-        font-size: 40px;
-        padding-top: 40px;
-        width: 250px;
+    .problems .problems__info-item{
+        align-items: center;
+    }
+
+    .problems .problems__info-item p{
         text-align: center;
     }
 
-    .info-question h2::after{
-        content: url("image/line_blue.svg");
+    .info-question h2{
+        width: 250px;
     }
 
     .info-question__table{
-        margin-bottom: 15px;
-        padding: 10px 10px;
-        width: 730px;
+        width: 100%;
+    }
 
-    }
-    .info-question__table__active{
-        border-collapse:separate;
-    }
-    
-
-    .info-question__table-head{
-        height: 60px;
-    }
 
     .info-question__table-text{
-        width: auto;
-        color:  #20305B;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .info-question__text{
+        margin-left: 18px;
+        height: 23px;
         font-size: 18px;
-        font-weight: 400;
-        line-height: 165%; /* 29.7px */
+        /* text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; */
     }
 
     .child_image{
@@ -700,9 +675,93 @@
         margin: 20px auto;
     }
 
-    .footer-last{
+    .footer__form{
+        background: #FFF;
+        border-radius: 10px;
+        width: auto;
         height: auto;
-        width: 100%;
+        margin-left: 0px;
+        margin: 0px 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__form-head{
+        display: flex;
+        gap: 10px;
+        padding-top: 56px;
+        margin-left: 0px;
+        
+    }
+    
+    .clinic-address{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .clinic-address::after{
+        content: '';
+    }
+    
+    .clinic-address__text{
+        color: #6D727E;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    .clinic-address__text-value{
+        color:  #070707;
+        border: none;
+        font-size: 24px;
+        font-weight: 500;
+        width: 250px;
+    }
+    
+    .clinic-addres__add-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    
+    .clinic-address__metro{
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .clinic-address__metro-name{
+        width: 200px;
+    }
+    
+    .clinic-address__fiveminutes{
+        margin-top: 10px;
+    }
+    
+    .visiting-hours{
+        display: flex;
+        margin-top: 10px;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        gap: 10px;
+    }
+    
+    
+    .footer__form-btn{
+        width: 90%;
+        height: 70px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border: none;
     }
 
     .footer-media{
@@ -713,32 +772,14 @@
     }
 
     .footer-navigation{
-        width: 768px;
+        width: 100%;
         height: auto;
         background: none;
         margin-left: 0px;
     }
 
-    .footer-navigation__list{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-    }
-
-    .footer-telephone {
-        margin-left: 0px;
-    }
-    .footer-media .footer-btn{
-        margin-left: 0px;
-    }
-    
-
     .footer-text{
-        width: 600px;
+        width: auto;
         text-align: center;
         font-size: 12px;
         font-weight: 400;
