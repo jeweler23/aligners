@@ -85,21 +85,21 @@
             </div>
         </div>
         <div class="image_children">
-            <img src="image/girl-child.png" alt="">
+            <img src="image/girl-child.png" alt="" class="image_children__girl">
         </div>
-        <nav class="services">
-            <ul class="services__list">
-                <li class="services__list-item services__list-item1"><a href="#short-video" class="services__list-link">Видео об услуге</a></li>
-                <li class="services__list-item services__list-item1"><a href="#menu-prices" class="services__list-link">Виды и цены</a></li>
-                <li class="services__list-item services__list-item1"><a href="#doctor-ostankovich" class="services__list-link">Врач</a></li>
-                <li class="services__list-item services__list-item1"><a href="#treatment" class="services__list-link">Этапы лечения</a></li>
-                <li class="services__list-item"><a href="#problems" class="services__list-link">Решение проблем</a></li>
-                <li class="services__list-item"><a href="#" class="services__list-link">Фото работa</a></li>
-                <li class="services__list-item"><a href="#question_answer" class="services__list-link">Вопросы и ответы</a></li>
-                <li class="services__list-item"><a href="#footer" class="services__list-link">Контакты</a></li>
-            </ul>
-        </nav>
     </section>
+    <nav class="services">
+        <ul class="services__list">
+            <li class="services__list-item services__list-item1"><a href="#short-video" class="services__list-link">Видео об услуге</a></li>
+            <li class="services__list-item services__list-item1"><a href="#menu-prices" class="services__list-link">Виды и цены</a></li>
+            <li class="services__list-item services__list-item1"><a href="#doctor-ostankovich" class="services__list-link">Врач</a></li>
+            <li class="services__list-item services__list-item1"><a href="#treatment" class="services__list-link">Этапы лечения</a></li>
+            <li class="services__list-item"><a href="#problems" class="services__list-link">Решение проблем</a></li>
+            <li class="services__list-item"><a href="#" class="services__list-link">Фото работa</a></li>
+            <li class="services__list-item"><a href="#question_answer" class="services__list-link">Вопросы и ответы</a></li>
+            <li class="services__list-item"><a href="#footer" class="services__list-link">Контакты</a></li>
+        </ul>
+    </nav>
     <section class="sleep-therapy" id="sleep-therapy">
         <div class="info-therapy">
             <!-- поделючить шрифты для жирного -->
@@ -133,15 +133,15 @@
         <!-- по центру сделал так больше нравится -->
         <button class="short-video__switch short-video__switch__left"><img src="image/short_video_arrow.svg" alt=""></button>
         <div class="short-video__video">
-            <video src="video/Water_Wave.mp4" type="video/mp4" class="short-video__video-video" controls></video>
+            <video src="video/Water_Wave.mp4" type="video/mp4" class="short-video__video-video"></video>
             <p class="short-video__video-text"><strong>Противопоказания</strong> к лечению во сне &#128564</p>
         </div>
         <div class="short-video__video short-video__video__top">
-            <video src="video/Click_Button_Effect.mp4" type="video/mp4" class="short-video__video-video" controls></video>
+            <video src="video/Click_Button_Effect.mp4" type="video/mp4" class="short-video__video-video" controls autoplay muted></video>
             <p class="short-video__video-text"><strong>В первый раз</strong> к &#129463 стоматологу</p>
         </div>
         <div class="short-video__video">
-            <video src="video/Image_Slider.mp4" type="video/mp4" class="short-video__video-video" controls></video>
+            <video src="video/Image_Slider.mp4" type="video/mp4" class="short-video__video-video"></video>
             <p class="short-video__video-text"><strong>Безопасно</strong> &#128578 ли лечение во сне?</p>
         </div>
         <button class="short-video__switch"><img src="image/short_video_arrow.svg" alt=""></button>
@@ -347,7 +347,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
     <div class="slider">
         <img src="image/slider.svg" alt="">
@@ -358,11 +357,11 @@
     <p class="treatment__stages">Этапы лечения за пять шагов</p>
     <span class="treatment__text-hurt">не страшно</span>
     <span class="treatment__text-pain">и не больно</span>
-    <p class="treatment__step one">1</p>
-    <p class="treatment__step two">2</p>
-    <p class="treatment__step three">3</p>
-    <p class="treatment__step four">4</p>
-    <p class="treatment__step five">5</p>
+    <!-- <p class="treatment__step one">1</p> -->
+    <!-- <p class="treatment__step two">2</p> -->
+    <!-- <p class="treatment__step three">3</p> -->
+    <!-- <p class="treatment__step four">4</p> -->
+    <!-- <p class="treatment__step five">5</p> -->
     <img src="image/arrow1.svg" alt="" class="treatment__image-arrow arrow_one">
     <img src="image/arrow2.svg" alt="" class="treatment__image-arrow arrow_two">
     <img src="image/arrow3.svg" alt="" class="treatment__image-arrow arrow_three">
@@ -371,25 +370,31 @@
         <div class="treatment__steps-block first_step">
             <h3 class="treatment__steps-head">Погружение в сон</h3>
             <p class="treatment__steps-text">Ребенок с родителями заходит в кабинет, где пациенту предлагают Севоран в качестве предварительного наркоза или сразу вводят Пропофол. Ребенок быстро засыпает</p>
+            <p class="treatment__step one">1</p>
         </div>
         <div class="treatment__steps-block    two_step">
             <h3 class="treatment__steps-head">BIS-мониторинг</h3>
             <p class="treatment__steps-text">Для контроля глубины внутривенного наркоза и введения точно дозированного объема препарата врачи используют современное оборудование, которое отслеживает самочувствие пациента на протяжении сна</p>
+            <p class="treatment__step two">2</p>
         </div>
         <div class="treatment__steps-block third_step">
             <h3 class="treatment__steps-head">Погружение в сон</h3>
             <p class="treatment__steps-text">Пока пациент спит, врачи выполняют запланированные стоматологические процедуры – под седацией проводят удаление молочных или постоянных разрушенных зубов, устраняют кариесы, пульпиты и периодонтиты</p>
+            <p class="treatment__step three">3</p>
         </div>
     </div>
     <div class="treatment__steps four_five">
         <div class="treatment__steps-block  four_step">
             <h3 class="treatment__steps-head">Уход домой</h3>
             <p class="treatment__steps-text">Хорошо отдохнувшие и здоровые дети после контрольного осмотра и общения с врачами отправляются домой вместе с родителями</p>
+            <p class="treatment__step four">4</p>
         </div>
         <div class="treatment__steps-block five_step">
             <h3 class="treatment__steps-head">Пробужение</h3>
             <p class="treatment__steps-text">После прекращения подачи препарата Пропофол пациент просыпается через 10-15 минут. Но иногда организм требует дополнительного естественного отдыха – сна на протяжении 30-40 минут. В таком случае ребенка оставляют досыпать необходимое ему время в отдельной палате</p>
+            <p class="treatment__step five">5</p>
         </div>
+
     </div>
 </section>
 <section class="problems" id="problems">
