@@ -5,11 +5,21 @@ let popupClose = document.querySelector('.popup__image-close')
 
 
 // добавляем слушателя к кнопке и класс актив диву popupBg
-popupBtn.addEventListener('click',(e) => {
-    e.preventDefault();
-    popupBg.classList.add('popup-bg__active')
-    document.body.style.overflow = 'hidden'
+
+document.body.addEventListener('click',(e)=>{
+    if (e.target.classList.contains('popup-btn')){
+        e.preventDefault();
+        console.log(popupBtn)
+        popupBg.classList.add('popup-bg__active')
+        document.body.style.overflow = 'hidden'
+    }
 })
+// popupBtn.addEventListener('click',(e) => {
+//     e.preventDefault();
+//     console.log(popupBtn)
+//     popupBg.classList.add('popup-bg__active')
+//     document.body.style.overflow = 'hidden'
+// })
 
 // при нажатии на крестик класс удаляем
 popupClose.addEventListener('click',function(event){
