@@ -9,8 +9,8 @@
     <title>Элайнеры для детей</title>
 </head>
 <body>
-    <div class="popup-bg" id="popup-bg">
-        <div class="popup" id="popup">
+    <!-- <div class="popup-bg">
+        <div class="popup">
             <form action="" method="post" class="popup-form">
                 <img src="image/close_icon.png" alt="" class="popup__image-close">
                 <div class="popup-form__head">
@@ -24,8 +24,24 @@
                 <button type="submit" class="popup-form__submit">Заказать обратный звонок</button>
             </form>
         </div>
-    </div>
+    </div> -->
     <header class="header">
+        <div class="popup-bg">
+            <div class="popup">
+                <form action="" method="post" class="popup-form">
+                    <img src="image/close_icon.png" alt="" class="popup__image-close">
+                    <div class="popup-form__head">
+                        <h1 class="popup-form__head-text">Доктор Левин</h1>
+                        <img src="image/kids.svg" alt="">
+                    </div>
+                    <label for="name-client">Ваше имя:</label>
+                    <input type="text" name="name-client" placeholder="Ваше имя">
+                    <label for="number-phone">Ваш номер телефона:</label>
+                    <input type="tel" name="number-phone" pattern="8{0-9}10" placeholder="81231231232" maxlength="11">
+                    <button type="submit" class="popup-form__submit">Заказать обратный звонок</button>
+                </form>
+            </div>
+        </div>
         <div class="logo">  
             <img src="image/icon_levinkids.svg" alt="Доктор Левин" class="logo__image">
             <div class="logo__info">
@@ -274,6 +290,22 @@
 
 </section>
 <section class="doctor-ostankovich" id="doctor-ostankovich">
+    <div class="popup-bg">
+        <div class="popup">
+            <form action="" method="post" class="popup-form">
+                <img src="image/close_icon.png" alt="" class="popup__image-close">
+                <div class="popup-form__head">
+                    <h1 class="popup-form__head-text">Доктор Левин</h1>
+                    <img src="image/kids.svg" alt="">
+                </div>
+                <label for="name-client">Ваше имя:</label>
+                <input type="text" name="name-client" placeholder="Ваше имя">
+                <label for="number-phone">Ваш номер телефона:</label>
+                <input type="tel" name="number-phone" pattern="8{0-9}10" placeholder="81231231232" maxlength="11">
+                <button type="submit" class="popup-form__submit">Заказать обратный звонок</button>
+            </form>
+        </div>
+    </div>
     <div class="doctor-ostankovich__information">
         <h2>Останькович Виктория Михайловна</h2>
         <h3>детский ортодонт</h3>
@@ -286,7 +318,7 @@
             ТОП-5 экспертов <span class="expert__text__blue">EuroKappa</span></p>
         </div>
         <p  class="doctor-ostankovich__information-text">Работая с малышами, всегда виден <strong>положительный эффект</strong> от лечения.<br>Я вижу, как растут мои пациенты, и радуюсь вместе с родителями их достижениям</p>
-        <button class="btn-style doctor-ostankovich__button">Записаться на приём</button>
+        <button class="btn-style doctor-ostankovich__button popup-btn">Записаться на приём</button>
     </div>
     <div>
         <img src="image/Ostankovich.png" alt="" class="doctor-ostankovich__photocard">
@@ -491,6 +523,18 @@
 </section> -->
 
 <footer class="footer" id="footer">
+    <div class="popup-bg-call">
+        <div class="popup-call">
+            <form action="" method="post" class="popup-call__form">
+                <img src="image/close_icon.png" alt="" class="popup__image-close">
+                <h2 class="popup-call__form-head">Заказать обратный звонок</h2>
+                <label for="popup-call__name">Введите ваше имя:</label>
+                <input type="text" name="popup-call__name" id="popup-call__name">
+                <label for="popup-call__tel">Введите ваше имя:</label>
+                <input type="tel" name="popup-call__tel" id="popup-call__tel" maxlength="12" required placeholder="номер в фомате +7">
+            </form>
+        </div>
+    </div>
     <h2>контактная информация</h2>
     <h3>контакты</h3>
     <div class="contact-information">
@@ -528,6 +572,18 @@
                 <a href="#">Координаты 55.732120.37.588526</a>
             </div>
         </div>
+        <!-- <div class="popup-bg-call">
+            <div class="popup-call">
+                <form action="" method="post" class="popup-call__form">
+                    <img src="image/close_icon.png" alt="" class="popup__image-close">
+                    <h2 class="popup-call__form-head">Заказать обратный звонок</h2>
+                    <label for="popup-call__name">Введите ваше имя:</label>
+                    <input type="text" name="popup-call__name" id="popup-call__name">
+                    <label for="popup-call__tel">Введите ваше имя:</label>
+                    <input type="tel" name="popup-call__tel" id="popup-call__tel" maxlength="12" required placeholder="номер в фомате +7">
+                </form>
+            </div>
+        </div> -->
         <div class="clinic-address">
             <p  class="clinic-address__text">Адрес клиники</p>
             <div class="clinic-address__metro">
@@ -558,8 +614,8 @@
                     </div>
                 </div>
             </div>
-            <button class="footer__form-btn footer__form-btn__pink">Записаться на приём</button>
-            <button class="footer__form-btn footer__form-btn__blue">Обратный звонок</button>
+            <button class="footer__form-btn footer__form-btn__pink popup-btn">Записаться на приём</button>
+            <button class="footer__form-btn footer__form-btn__blue popup-btn__call">Обратный звонок</button>
     </div>
     <!-- добавить адрес клиники для адаптива -->
     <div class="footer-last">
@@ -588,7 +644,7 @@
                     <p class="footer-telephone__number">+7 495 775-58-21</p>
                     <p class="footer-telephone__text">заказать обратный звонок</p></a>
             </div>
-            <button class="footer-btn">Записаться на приём</button>
+            <button class="footer-btn popup-btn">Записаться на приём</button>
         </div>
         <nav class="footer-navigation">
             <ul class="footer-navigation__list">
