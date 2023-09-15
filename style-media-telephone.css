@@ -50,7 +50,7 @@
         letter-spacing: -0.12px;
     }
 
-    .logo__info,.logo-adress,.btn-style,.navigation{
+    .logo__info,.logo-adress,.btn-style,.navigation,.popup-bg{
         display: none;
     }
 

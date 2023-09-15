@@ -1,5 +1,6 @@
 @media (max-width:768px){
     body{
+        /* outline: 1px solid black; */
         /* width: 100vw; */
         overflow-x: hidden;
         scroll-behavior:smooth;
@@ -353,6 +354,7 @@
         align-items: center;
         height: auto;
         /* outline: 1px solid; */
+        position: relative;
     }
 
     .doctor-ostankovich__information{
@@ -620,7 +622,6 @@
 
     /* футер */
     .footer{
-        
         border-radius: 15px 15px 0px 0px;
     }
 
@@ -713,7 +714,7 @@
         line-height: normal;
     }
 
-    .footer-media__levin,.footer-media__social{
+    .footer-media__levin,.footer-media__social,.popup-bg-call{
         display: none;
     }
 }
