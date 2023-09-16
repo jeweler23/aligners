@@ -1,10 +1,9 @@
 @media (max-width:768px){
     body{
-        /* outline: 1px solid black; */
-        /* width: 100vw; */
+
         overflow-x: hidden;
         scroll-behavior:smooth;
-        /* box-sizing: content-box; */
+
     }
     /* header*/
     .header{
@@ -51,6 +50,7 @@
         flex-direction: column;
         flex-wrap: nowrap;
         height: auto;
+        background: #a210c7;
     }
     .types-prices{
         order: 1;
@@ -61,8 +61,10 @@
         box-sizing: border-box;
         margin-top: 0px;
         padding-left: 0px;
+        /* margin-top: 400px; */
     }
     .types-prices h1{
+        z-index: 1;
         color: #FFF;
         margin-top: 0px;
         text-align: center;
@@ -90,15 +92,19 @@
     .btn_prices{
         order: 1;
     }
-    .aligners-for-children .image_children{
+    .aligners-for-children .image_children
+    img{
+        display: block;
         order: 0;
-        width: 457.862px;
-        height: 373.778px;
-        margin: auto;
+        width: 100%;
+        height: 100%;
+        outline: 1px solid black;
+        margin-bottom: 0px;
+        /* position: absolute; */
     }
     .services{
         order: 2;
-        width: 100%;
+        width: auto;
     }
     .services__list{
         padding: 21px 0px;

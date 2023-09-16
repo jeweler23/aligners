@@ -199,9 +199,7 @@
   }
   
   .aligners-for-children .image_children img{
-      height: 100%;
-      width: auto;
-      outline: 1px solid black;
+    display: none;
   }
   
   /* .image_children__girl{
@@ -1893,15 +1891,12 @@
   
   .popup{
       position: absolute;
-      
       width: auto;
       height: auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%,-50%);
-      /* margin: auto; */
       background-color: #284795;
-      /* z-index: 6; */
   }
   
   .popup .popup-form{
@@ -1913,10 +1908,6 @@
       gap: 15px;
       padding-left: 15px;
       position: relative;
-      /* background-image: url("image/fon_form.png");
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat; */
       background-color: #FFF8F4;
   }
   
@@ -1973,9 +1964,11 @@
   
   .popup-bg-call{
       opacity: 0;
-      position: absolute;
+      position: fixed;
       pointer-events: none;
       background-color: rgba(255, 255, 255, 0.50);
+      top:0;
+      left:0;
       width: 100%;
       height: 100vh;
       transition: 0.5s all ease;
@@ -1988,18 +1981,19 @@
   
   
   .popup-call{
-      position: relative;
+      position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 800px;
-      height: 400px;
+      width: 500px;
+      height: 500px;
       background-color: #4782CD;
       border-radius: 20px;
       z-index: 5;
   }
   
   .popup-call__form{
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -2021,7 +2015,7 @@
   .popup-call__form .popup-call__form-head{
       padding: 0px;
       margin:20px;
-      font-size: 42px;
+      font-size: 30px;
       font-style: italic;
   }
   
