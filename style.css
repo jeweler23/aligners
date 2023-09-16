@@ -4,7 +4,6 @@
     font-family: TTFirsNeue400;
     font-style: normal;
     line-height: normal;
-    outline: 1px solid black;
   }
   
   html{
@@ -163,9 +162,14 @@
       height: 697px;
       width: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+    /* padding-left: 200px; */
       /* flex-wrap: wrap; */
-      background: #a210c7;  
+      /* background: #a210c7;  */
+      background-image: url("image/Mask_girl.jpg"); 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
   }
   
   .types-prices{
@@ -188,20 +192,20 @@
   }
   
   .aligners-for-children .image_children{
-      background-size: cover;
-      box-shadow: 38px 4px 31px 0px rgba(122, 33, 135, 0.2), 0px 2px 23px 0px rgba(103, 28, 207, 0.50) inset, -38px 9px 80px 0px rgba(0, 0, 0, 0.20);
+      /* background-size: cover; */
+      /* box-shadow: 38px 4px 31px 0px rgba(122, 33, 135, 0.2), 0px 2px 23px 0px rgba(103, 28, 207, 0.50) inset, -38px 9px 80px 0px rgba(0, 0, 0, 0.20); */
   }
   
   .aligners-for-children .image_children img{
       height: 100%;
+      width: auto;
+      outline: 1px solid black;
+  }
+  
+  /* .image_children__girl{
       width: 100%;
-  
-  }
-  
-  .image_children__girl{
-      /* width: 100%; */
-      /* height: 100%; */
-  }
+      height: 100%;
+  } */
   
   .types-prices__text{
       color: #FFF;
@@ -343,7 +347,7 @@
   }
   .services{
       width: 100%;
-      background-color: #a210c7;;
+      background: linear-gradient(180deg, rgba(65, 57, 150, 0.00) 0%, #413996 100%);
   }
   
   .services__list-item{
@@ -390,8 +394,12 @@
   
   .sleep-therapy{
       width: 100%;;
-      background: #a210c7;
+      /* background: #a210c7; */
+      background-image: url('image/sleep-therapy.png');
       display: flex;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
       justify-content: center;
       padding-bottom: 60px;
       padding-top: 40px;
@@ -403,6 +411,7 @@
       /* margin-top: 140px; */
       box-sizing: border-box;
       margin-left: 148px; 
+
   }
   
   .info-therapy__header{
@@ -1850,7 +1859,9 @@
       /* display: none; */
       pointer-events: none;
       background-color:rgba(255, 255, 255, 0.5);
-      position: absolute;
+      position: fixed;
+      top:0;
+      left:0;
       height: 100vh;
       width: 100%;
       transition: 0.5s ease;
