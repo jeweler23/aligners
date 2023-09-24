@@ -727,7 +727,7 @@
   
   .menu-addaligner{
       background: #FFF9F4;
-  
+    cursor: pointer;
   }
   
   .menu-addaligner__text{
@@ -2017,6 +2017,14 @@
       margin:20px;
       font-size: 30px;
       font-style: italic;
+  }
+
+ /* .menu-aligners .open{
+    background: #474A6A;
+  } */
+
+  .menu-aligners .accordion-hidden{
+    display: none;
   }
   
   @font-face {
