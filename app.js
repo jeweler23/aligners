@@ -65,7 +65,7 @@ popupBtnCall.addEventListener('click', function(event){
 
 
 const accordionContent = document.querySelectorAll('.accordion-content')
-// console.log(accordionContent)
+
 accordionContent.forEach((item,index) =>{
     
     item.addEventListener('click', (e)=>{
@@ -80,9 +80,8 @@ accordionContent.forEach((item,index) =>{
             text.style.color = '#FFF'
             image.style.transform = "rotate(90deg)";
             accordionHidden.forEach((el) =>{
-                el.style.display = 'block'
+                el.style.display = 'flex'
             })
-            // accordionHidden.style.display = 'block'
             
         }
         else{
@@ -94,23 +93,7 @@ accordionContent.forEach((item,index) =>{
             })
         }
     })
-    // let header = item.querySelectorAll('.test-accordion')
-    // let accordionHidden = document.querySelectorAll('.accordion-hidden') // почему не могу получить из массива accordionContent
 
-    // header.forEach((item1,index1) =>{
-    //     item1.addEventListener('click',()=>{
-    //         console.log(item1)
-    //         item1.classList.toggle('open')
-    //         let text = item.querySelector('.test-accordion-text')
-    //         let image = document.querySelectorAll('.accordion-image')
-    //         // let accordionHidden = document.querySelectorAll('.accordion-hidden')
-
-    //         // console.log(accordionHidden)
-
-
-
-    //     })
-    // })
 })
 
 // function removeOpen(index1){
