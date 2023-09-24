@@ -65,38 +65,52 @@ popupBtnCall.addEventListener('click', function(event){
 
 
 const accordionContent = document.querySelectorAll('.accordion-content')
-console.log(accordionContent)
+// console.log(accordionContent)
 accordionContent.forEach((item,index) =>{
-
-    let header = item.querySelectorAll('.test-accordion')
     
-    // console.log(accordionContent)
-    header.forEach((item1,index1) =>{
-        item1.addEventListener('click',()=>{
-            console.log(item1)
-            item1.classList.toggle('open')
-            let text = item.querySelector('.test-accordion-text')
-            let image = document.querySelectorAll('.accordion-image')
-            let accordionHidden = document.querySelectorAll('.accordion-hidden') // почему не могу получить из массива accordionContent
-
-            if(item1.classList.contains('open')){
-
-                item1.style.background ='#474A6A'
-                text.style.color = '#FFF'
-                image[index].style.transform = "rotate(90deg)";
-                accordionHidden[index].style.display = 'block'
-                
-            }
-            else{
-                // item1.style.height = '0px'
-                item1.style.background ='#FFF9F4'
-                text.style.color = '#20305B'
-                image[index].style.transform = "rotate(0deg)";
-                accordionHidden[index].style.display = 'none'
-            }
-
-        })
+    item.addEventListener('click', (e)=>{
+        let header = item.querySelector('.test-accordion')
+        let accordionHidden = item.querySelectorAll('.accordion-hidden') 
+        let text = item.querySelector('.test-accordion-text')
+        let image = item.querySelector('.accordion-image')
+        console.log(accordionHidden)
+        header.classList.toggle('open')
+        if(header.classList.contains('open')){
+            header.style.background ='#474A6A'
+            text.style.color = '#FFF'
+            image.style.transform = "rotate(90deg)";
+            accordionHidden.forEach((el) =>{
+                el.style.display = 'block'
+            })
+            // accordionHidden.style.display = 'block'
+            
+        }
+        else{
+            header.style.background ='#FFF9F4'
+            text.style.color = '#20305B'
+            image.style.transform = "rotate(0deg)";
+            accordionHidden.forEach((el) =>{
+                el.style.display = 'none'
+            })
+        }
     })
+    // let header = item.querySelectorAll('.test-accordion')
+    // let accordionHidden = document.querySelectorAll('.accordion-hidden') // почему не могу получить из массива accordionContent
+
+    // header.forEach((item1,index1) =>{
+    //     item1.addEventListener('click',()=>{
+    //         console.log(item1)
+    //         item1.classList.toggle('open')
+    //         let text = item.querySelector('.test-accordion-text')
+    //         let image = document.querySelectorAll('.accordion-image')
+    //         // let accordionHidden = document.querySelectorAll('.accordion-hidden')
+
+    //         // console.log(accordionHidden)
+
+
+
+    //     })
+    // })
 })
 
 // function removeOpen(index1){
