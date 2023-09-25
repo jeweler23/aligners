@@ -2024,7 +2024,11 @@
   } */
 
   .menu-aligners .accordion-hidden{
-    display: none;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    line-height: 0;
+    overflow: hidden;
   }
   
   @font-face {

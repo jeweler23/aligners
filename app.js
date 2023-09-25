@@ -70,7 +70,7 @@ accordionContent.forEach((item,index) =>{
     
     item.addEventListener('click', (e)=>{
         let header = item.querySelector('.test-accordion')
-        let accordionHidden = item.querySelectorAll('.accordion-hidden') 
+        let accordionHidden = item.querySelectorAll('td') 
         let text = item.querySelector('.test-accordion-text')
         let image = item.querySelector('.accordion-image')
         console.log(accordionHidden)
@@ -80,7 +80,7 @@ accordionContent.forEach((item,index) =>{
             text.style.color = '#FFF'
             image.style.transform = "rotate(90deg)";
             accordionHidden.forEach((el) =>{
-                el.style.display = 'flex'
+                el.classList.remove('accordion-hidden')
             })
             
         }
@@ -89,7 +89,7 @@ accordionContent.forEach((item,index) =>{
             text.style.color = '#20305B'
             image.style.transform = "rotate(0deg)";
             accordionHidden.forEach((el) =>{
-                el.style.display = 'none'
+                el.classList.add('accordion-hidden')
             })
         }
     })
