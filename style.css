@@ -649,7 +649,7 @@
   }
   
   .aligners-info__text{
-      color: #FFF;
+      color: #20305B;
       font-size: 24px;
       font-weight: 400;
   
@@ -726,7 +726,7 @@
   }
   
   .menu-addaligner{
-      background: #FFF9F4;
+      /* background: #FFF9F4; */
     cursor: pointer;
   }
   
