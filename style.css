@@ -1484,6 +1484,10 @@
   .info-question__table-image{
       margin-right: 24px;
   }
+
+  .info-question__table-image{
+    /* transform: rotate(90deg); */
+}
   
   
   .info-question__table__active{
@@ -2024,6 +2028,14 @@
   } */
 
   .menu-aligners .accordion-hidden{
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  .question_answer .accordion-hidden{
     height: 0;
     font-size: 0;
     padding: 0;
