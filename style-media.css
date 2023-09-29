@@ -299,6 +299,7 @@
     .menu-aligners{
         width: 100%;
         height: auto;
+        transition: all 0.25s linear;
     }
     .aligners-info{
         height: 64px;
