@@ -640,7 +640,7 @@
   
   .aligners-info{
       height: 76px;
-      background: #474A6A;
+      background: #FFF9F4;
       border-radius: 10px 10px 0px 0px;
       display: flex;
       align-items: center;
@@ -649,7 +649,7 @@
   }
   
   .aligners-info__text{
-      color: #FFF;
+      color: #20305B;
       font-size: 24px;
       font-weight: 400;
   
@@ -726,7 +726,7 @@
   }
   
   .menu-addaligner{
-      background: #FFF9F4;
+      /* background: #FFF9F4; */
     cursor: pointer;
   }
   
@@ -1484,6 +1484,10 @@
   .info-question__table-image{
       margin-right: 24px;
   }
+
+  .info-question__table-image{
+    /* transform: rotate(90deg); */
+}
   
   
   .info-question__table__active{
@@ -2024,7 +2028,19 @@
   } */
 
   .menu-aligners .accordion-hidden{
-    display: none;
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+
+  .question_answer .accordion-hidden{
+    height: 0;
+    font-size: 0;
+    padding: 0;
+    line-height: 0;
+    overflow: hidden;
   }
   
   @font-face {
