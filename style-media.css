@@ -1,6 +1,6 @@
 @media (max-width:768px){
     body{
-
+        
         overflow-x: hidden;
         scroll-behavior:smooth;
 
@@ -98,13 +98,13 @@
         order: 0;
         width: 100%;
         height: 100%;
-        outline: 1px solid black;
         margin-bottom: 0px;
         /* position: absolute; */
     }
     .services{
         order: 2;
         width: auto;
+        padding-left: 0px;
     }
     .services__list{
         padding: 21px 0px;
@@ -164,21 +164,24 @@
 
     .doctor_part__doctor{
         flex: 1 1 100%;
-        border-radius: 50%;
-        width: 70px;
+        /* border-radius: 50%; */
+        /* width: 70px; */
+        height: 80px;
+        width: 90px;
     }
 
     .doctor_part__doctor-image{
-        width: 80px;
-        height: 80px;
+        width: 90px;
+        height: 90px;
         position: relative;
-        left: -3px;
-        top: 15px;
+
     }
 
     .doctor_part__doctor-fio{
         font-size: 22px;
         font-weight: 500;
+        color: #7BC35A;
+        margin-top: 0px;
     }
 
     .doctor_part__doctor-text{
@@ -224,8 +227,6 @@
         position: relative;
         justify-content: center;
         overflow-x: hidden;
-        /* outline: 1px solid black; */
-        /* box-sizing: content-box; */
     }
 
     .short-video__switch{
@@ -245,21 +246,17 @@
         margin-left: 0px;
     }
     .short-video__video{
-        /* flex: 0; */
         width: 500px;
         height: 470px;
         margin: 42px 0px 65px 0px;
         align-items: center;
         background-size: cover;
         padding: 0px;
-        /* flex: 1 1 100%; */
     }
 
     .short-video__video__top{
         align-self: center;
         flex: 1 1 100%;
-        /* margin: 42px 45px 65px 45px; */
-        /* margin: 42px 0px 65px 0px; */
     }
     .short-video__video:first-child{
         margin-left: 0px;
@@ -288,7 +285,6 @@
 
     .menu-prices span{
         width: auto;
-        /* width: 898px; */
         padding: 0px 17px;
         font-size: 26px;
         font-weight: 400;
@@ -300,28 +296,17 @@
         width: 100%;
         height: auto;
         transition: all 0.25s linear;
+        overflow-x: hidden;
     }
     .aligners-info{
         height: 64px;
-        /* width: auto; */
-        
-        background: #474A6A;
+
         border-radius: 10px 10px 0px 0px;
         display: flex;
         align-items: center;
-        justify-content:space-between;
-        /* padding-left: 10px; */
+
     }
-    .aligners-info__text{
-        font-size: 18px;;
-        font-weight: 500;
-        line-height: 125%; /* 22.5px */
-        /* outline: 1px solid black; */
-    }
-    .aligners-info__image{
-        /* margin-left: 80px; */
-        /* outline: 1px solid black; */
-    }
+
 
     .aligners-info__logo{
         margin-right: 15px;
@@ -329,10 +314,8 @@
         height: 40px;
     }
     .menu-aligners td{
-        /* height: 52px; */
-        padding: 0px 10px;
+        padding: 0px 0px;
         height: auto;
-        /* margin: 0px 20px; */
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -340,7 +323,6 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 165%;
-        /* outline: 1px solid black; */
     }
     .menu-aligners__column-1{
         padding-left: 0px;
@@ -352,16 +334,20 @@
     
     }
     .menu-addaligner{
-        background: #FFF9F4;
         cursor: pointer;
+
+    }
+    .menu-addaligner__text {
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0em;
+        color: #20305B;
     }
 
     .doctor-ostankovich{
-        /* width: 500px; */
         flex-direction: column;
         align-items: center;
         height: auto;
-        /* outline: 1px solid; */
         position: relative;
     }
 
@@ -381,13 +367,12 @@
         width: 400px;
         font-size: 32px;
         font-weight: 600;
-        line-height: 133%; /* 42.56px */
+        line-height: 133%;
         letter-spacing: 0.32px;
         
     }
     .doctor-ostankovich__information h3{
         text-align: center;
-        /* font-family: Comic CAT; */
         font-size: 20px;
         font-weight: 400;
     }
@@ -403,13 +388,15 @@
         width: auto;
         text-align: center;
         padding: 0px 15px;
-        /* height: 152px; */
     }
     .doctor-ostankovich__photocard{
         width: auto;
         height: 542px;
         flex-shrink: 0;
         left: 0px;
+    }
+    .tooth_yellow{
+        opacity: 0;
     }
 
     /* до после */
@@ -576,6 +563,12 @@
         align-items: center;
         gap: 50px;
     }
+
+    .tooth_beige{
+        opacity: 0;
+    }
+
+
     .question_answer{
         /* flex-direction: column;    */
     }
@@ -669,7 +662,7 @@
     }
 
     .footer-navigation{
-        width: 768px;
+        width: 100vw;
         height: auto;
         background: none;
         margin-left: 0px;

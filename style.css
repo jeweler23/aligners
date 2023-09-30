@@ -4,6 +4,7 @@
     font-family: TTFirsNeue400;
     font-style: normal;
     line-height: normal;
+    
   }
   
   html{
@@ -585,9 +586,10 @@
       font-weight: 400;
       line-height: 125%;
       position: absolute;
-      left: 30px;
-      bottom:80px;
-  
+      left: 55%;
+      transform: translateX(-50%);
+      bottom:100px;
+    width: 370px;
   }
   
   .menu-prices{
@@ -1505,7 +1507,7 @@
       color: black;
       /* border-radius:10px; */
       border-right: 2px solid  #E2E6F0;
-      border-bottom: 2px solid #E2E6F0;
+      /* border-bottom: 2px solid #E2E6F0; */
       border-left: 2px solid  #E2E6F0;
       display: flex;
       padding: 24px;
@@ -2053,10 +2055,15 @@
     transition: all 0.25s linear;
   }
 
+
 .question_answer td{
     max-height: 500px;
     transition: all 0.25s linear;
   }
+
+.accordion-image{
+    transform: rotate(90deg);
+}
   
   @font-face {
       font-family: "TT Firs Neue";

@@ -72,25 +72,27 @@ accordionContent.forEach((item,index) =>{
         let header = item.querySelector('.test-accordion')
         let accordionHidden = item.querySelectorAll('td') 
         let text = item.querySelector('.test-accordion-text')
+        let itemTable = item.querySelector('.info-question__table-item') // выдает ошибки если кликать по таблице верхней
         let image = item.querySelector('.accordion-image')
-        console.log(accordionHidden)
+        // console.log(itemTable)
         header.classList.toggle('open')
         if(header.classList.contains('open')){
             header.style.background ='#474A6A'
             text.style.color = '#FFF'
-            image.style.transform = "rotate(90deg)";
+            image.style.transform = "rotate(0deg)";
             accordionHidden.forEach((el) =>{
                 el.classList.remove('accordion-hidden')
             })
-            
+            itemTable.style.borderBottom = '2px solid #E2E6F0'
         }
         else{
             header.style.background ='#FFF9F4'
             text.style.color = '#20305B'
-            image.style.transform = "rotate(0deg)";
+            image.style.transform = "rotate(90deg)";
             accordionHidden.forEach((el) =>{
                 el.classList.add('accordion-hidden')
             })
+            itemTable.style.borderBottom = 'none'
         }
     })
 
